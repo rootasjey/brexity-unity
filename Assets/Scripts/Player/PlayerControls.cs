@@ -9,7 +9,7 @@ public class PlayerControls : MonoBehaviour {
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody2D>();
-        movespeed = 3;
+        movespeed = 5;
     }
 
     // Update is called once per frame
@@ -20,6 +20,14 @@ public class PlayerControls : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.RightArrow)) {
             rb.velocity = new Vector2(movespeed, rb.velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            rb.velocity = new Vector2(rb.velocity.x, movespeed);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow)) {
+            rb.velocity = new Vector2(rb.velocity.x, -movespeed);
         }
     }
 }
