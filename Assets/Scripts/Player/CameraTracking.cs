@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraTracking : MonoBehaviour {
     public GameObject player;
-
     private Vector3 _offset;
 
 	// Use this for initialization
