@@ -14,7 +14,7 @@ public class PlayerRunControllerScript : MonoBehaviour {
     public Animator anim;
     // Freeze velocity on movement
     public bool freezeMovement = false;
-
+    public bool canRun = true;
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -30,7 +30,7 @@ public class PlayerRunControllerScript : MonoBehaviour {
         float move = Input.GetAxis("Horizontal");
     
         // Sprint
-        if (Input.GetButton("Sprint"))
+        if (Input.GetButton("Sprint") && canRun)
         {
             actualSpeed = maxRunSpeed * move;
         }
