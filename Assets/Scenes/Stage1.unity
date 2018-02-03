@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 14197589}
   - component: {fileID: 14197596}
   - component: {fileID: 14197597}
+  - component: {fileID: 14197598}
   - component: {fileID: 14197595}
   - component: {fileID: 14197587}
   - component: {fileID: 14197593}
@@ -372,6 +373,18 @@ MonoBehaviour:
   stand: {fileID: 14197587}
   crouch: {fileID: 14197588}
   circle: {fileID: 14197593}
+--- !u!114 &14197598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 14197586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0955f288f9aa33644b3ebb175e690f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visibility: 29
 --- !u!1 &232423309
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +598,60 @@ RectTransform:
   m_AnchoredPosition: {x: 13.31, y: -45.7}
   m_SizeDelta: {x: 218.93, y: 91.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &441804839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 441804840}
+  - component: {fileID: 441804841}
+  m_Layer: 11
+  m_Name: PurgerWall (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441804840
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441804839}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.77, y: -3.5, z: 0}
+  m_LocalScale: {x: 1.525, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487985417}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &441804841
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441804839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.5015445}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 4.003089}
+  m_EdgeRadius: 0
 --- !u!4 &540984308 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4197335446806198, guid: efef5bf60ced6ae41ada39eebe94ce8a,
@@ -896,7 +963,9 @@ GameObject:
   - component: {fileID: 1008419975}
   - component: {fileID: 1008419974}
   - component: {fileID: 1008419973}
-  m_Layer: 0
+  - component: {fileID: 1008419977}
+  - component: {fileID: 1008419978}
+  m_Layer: 10
   m_Name: Purger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,6 +1089,47 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1008419977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008419971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a6589e2d2bfda46bea24a3613bb06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 2
+  runSpeed: 5
+  actualSpeed: 0
+  playerDetected: 0
+  playerLocation: {x: 0, y: 0}
+  rangeFollow: 2
+  direction: 1
+--- !u!114 &1008419978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008419971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fc2e9cea70af541a5fc258cb26a896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  distanceToSeePlater: 5
+  distanceToSeeObstacle: 2
+  height: 0
+  detectionTimer: 5
+  maxDetectionTimer: 5
+  purgerDirection: {x: 1, y: 0}
 --- !u!4 &1054724409
 Transform:
   m_ObjectHideFlags: 0
@@ -1036,6 +1146,60 @@ Transform:
   m_Father: {fileID: 1487985417}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1346641838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1346641839}
+  - component: {fileID: 1346641840}
+  m_Layer: 11
+  m_Name: PurgerWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346641839
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346641838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.45, y: -3.57, z: 0}
+  m_LocalScale: {x: 1.525, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487985417}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1346641840
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346641838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.5015445}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 4.003089}
+  m_EdgeRadius: 0
 --- !u!1 &1451222443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1341,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487985415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1054724409}
@@ -1186,6 +1350,8 @@ Transform:
   - {fileID: 1591941960}
   - {fileID: 929673209}
   - {fileID: 1008419972}
+  - {fileID: 1346641839}
+  - {fileID: 441804840}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
