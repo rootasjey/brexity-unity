@@ -31,10 +31,10 @@ public class PurgerRunControllerScript : MonoBehaviour {
             //Vector2.Distance(new Vector2(transform.position.x, transform.position.y), playerLocation);
             //if (range <= 15f)
             //{
-            Vector2 direction = playerLocation - new Vector2(transform.position.x, transform.position.y);
-            Debug.Log("direction => " + direction + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed);
-            if (direction.x > rangeFollow) {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(actualSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            Vector2 directionToGoToPlayer = playerLocation - new Vector2(transform.position.x, transform.position.y);
+            Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
+            if (Mathf.Abs(directionToGoToPlayer.x) > rangeFollow) {
+                GetComponent<Rigidbody2D>().velocity = new Vector2(direction * actualSpeed, GetComponent<Rigidbody2D>().velocity.y);
             }
         }
         else
