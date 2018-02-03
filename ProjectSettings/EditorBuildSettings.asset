@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 4b180968c9e28824a816070a973383ca
   - enabled: 1
-    path: Assets/Scenes/Stage2.unity
+    path: Assets/Scenes/Stage2_sewer.unity
     guid: 23a385e29fc8c9a459428878948b95e9
+  - enabled: 1
+    path: Assets/Scenes/Stage2_town.unity
+    guid: e58c7cd60bfa8ec46b32649a70930f2d

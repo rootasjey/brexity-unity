@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void StartGame() {
-        SceneManager.LoadScene("Stage2");
+        SceneManager.LoadScene("Stage2_town");
     }
 
     public void ShowMainMenu() {
