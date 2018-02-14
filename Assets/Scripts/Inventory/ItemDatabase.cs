@@ -9,7 +9,7 @@ public class ItemDatabase : MonoBehaviour {
     private JsonData itemData;
 
     private void Start() {
-        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
+        itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/GameData/Items.json"));
         ConstructItemDatabase();
     }
 
