@@ -1,0 +1,13 @@
+{
+  "Audio": {
+    "Volume": {
+      "Master": 1
+    }
+  },
+  "KeysBindings": {
+    "UP": "",
+    "DOWN": "",
+    "LEFT": "",
+    "RIGHT": ""
+  }
+}
