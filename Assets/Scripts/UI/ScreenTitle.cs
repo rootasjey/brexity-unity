@@ -6,16 +6,20 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class ScreenTitle : MonoBehaviour {
-    private GameObject _mainMenu;
-    private GameObject _optionsMenu;
-
-    private GameObject _screenTitle;
-
     //Raw Image to Show Video Images [Assign from the Editor]
     //public RawImage image;
 
     //Video To Play [Assign from the Editor]
     public VideoClip videoToPlay;
+    public Font fontScreenMatrix;
+
+    private GameObject _screenTitle;
+
+    private bool _isIntroSkipped = false;
+    private GUIContent _hintSkipText;
+    private GUIStyle _fontStyle;
+
+    private int _cursorMenuIndex = 0;
 
     private VideoPlayer videoPlayer;
     private VideoSource videoSource;
@@ -24,22 +28,27 @@ public class ScreenTitle : MonoBehaviour {
     private AudioSource audioSource;
 
     private void Start() {
-        //_mainMenu = GameObject.Find("MainMenu");
-        //_optionsMenu = GameObject.Find("OptionsMenu");
-
-        //_optionsMenu.SetActive(false);
-
         _screenTitle = GameObject.Find("Menu");
         _screenTitle.SetActive(false);
 
+        InitFontStyle();
+
         Application.runInBackground = true;
+
         StartCoroutine(PlayIntro());
+        StartCoroutine(HideSkipTextAfterSecs());
     }
 
     private void Update() {
-        if (Input.anyKeyDown) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             StopIntro();
         }
+    }
+
+    private void OnGUI() {
+        if (_isIntroSkipped) return;
+
+        GUI.Label(new Rect(10, Screen.height - 50, 200, 100), _hintSkipText, _fontStyle);
     }
 
     IEnumerator PlayIntro() {
@@ -95,9 +104,27 @@ public class ScreenTitle : MonoBehaviour {
         StopIntro();
     }
 
+    private void InitFontStyle() {
+        _fontStyle = new GUIStyle {
+            font = fontScreenMatrix,
+            fontSize = 24,
+            normal = new GUIStyleState() { textColor = Color.white }
+        };
+
+        _hintSkipText = new GUIContent("PRESS SPACE KEY TO SKIP...");
+    }
+
     private void StopIntro() {
+        _isIntroSkipped = true;
+
         videoPlayer.Stop();
+
         _screenTitle.SetActive(true);
+    }
+
+    private IEnumerator HideSkipTextAfterSecs() {
+        yield return new WaitForSeconds(5f);
+        _isIntroSkipped = true;
     }
 
     public void StartGame() {
@@ -108,17 +135,17 @@ public class ScreenTitle : MonoBehaviour {
         ExitGame();
     }
 
-    public void ShowMainMenu() {
-        _mainMenu.SetActive(true);
-        _optionsMenu.SetActive(false);
-    }
+    //public void ShowMainMenu() {
+    //    _mainMenu.SetActive(true);
+    //    _optionsMenu.SetActive(false);
+    //}
 
-    public void ShowOptionsMenu() {
-        _mainMenu.SetActive(false);
-        _optionsMenu.SetActive(true);
-    }
+    //public void ShowSettingsMenu() {
+    //    _mainMenu.SetActive(false);
+    //    _optionsMenu.SetActive(true);
+    //}
 
-    public void ShowCredits() {
+    //public void ShowCredits() {
 
-    }
+    //}
 }
