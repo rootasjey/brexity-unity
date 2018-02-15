@@ -69,7 +69,7 @@ public class ScreenTitle : MonoBehaviour {
 
         //Wait until video is prepared
         while (!videoPlayer.isPrepared) {
-            Debug.Log("Preparing Video");
+            //Debug.Log("Preparing Video");
             yield return null;
         }
 
@@ -102,6 +102,10 @@ public class ScreenTitle : MonoBehaviour {
 
     public void StartGame() {
         SceneManager.LoadScene("Stage2_town");
+    }
+
+    public void ExitGame() {
+        ExitGame();
     }
 
     public void ShowMainMenu() {
