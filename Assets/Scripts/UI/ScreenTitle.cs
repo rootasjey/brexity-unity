@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class ScreenTitle : MonoBehaviour {
@@ -19,12 +16,7 @@ public class ScreenTitle : MonoBehaviour {
     private GUIContent _hintSkipText;
     private GUIStyle _fontStyle;
 
-    private int _cursorMenuIndex = 0;
-
     private VideoPlayer videoPlayer;
-    private VideoSource videoSource;
-
-    //Audio
     private AudioSource audioSource;
 
     private void Start() {
@@ -126,26 +118,4 @@ public class ScreenTitle : MonoBehaviour {
         yield return new WaitForSeconds(5f);
         _isIntroSkipped = true;
     }
-
-    public void StartGame() {
-        SceneManager.LoadScene("Stage2_town");
-    }
-
-    public void ExitGame() {
-        ExitGame();
-    }
-
-    //public void ShowMainMenu() {
-    //    _mainMenu.SetActive(true);
-    //    _optionsMenu.SetActive(false);
-    //}
-
-    //public void ShowSettingsMenu() {
-    //    _mainMenu.SetActive(false);
-    //    _optionsMenu.SetActive(true);
-    //}
-
-    //public void ShowCredits() {
-
-    //}
 }
