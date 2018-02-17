@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestStage2 : MonoBehaviour {
+public class Stage2Quest : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

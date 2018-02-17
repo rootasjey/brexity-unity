@@ -2,15 +2,14 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class ScreenTitle : MonoBehaviour {
+public class ScreenTitleOrchestrator : MonoBehaviour {
     //Raw Image to Show Video Images [Assign from the Editor]
     //public RawImage image;
 
     //Video To Play [Assign from the Editor]
     public VideoClip videoToPlay;
     public Font fontScreenMatrix;
-
-    private GameObject _screenTitle;
+    
     private GameObject _backgroundMusic;
 
     private bool _isIntroSkipped = false;
@@ -19,6 +18,8 @@ public class ScreenTitle : MonoBehaviour {
 
     private VideoPlayer videoPlayer;
     private AudioSource audioSource;
+
+    private GameObject _mainMenu, _settingsMenu;
 
     private void Start() {
         InitializeComponents();
@@ -31,13 +32,14 @@ public class ScreenTitle : MonoBehaviour {
     }
 
     private void InitializeComponents() {
-        _screenTitle = GameObject.Find("MainMenu");
-        _screenTitle.SetActive(false);
+        _mainMenu = GameObject.Find("MainMenu");
+        _mainMenu.SetActive(false);
 
         _backgroundMusic = GameObject.Find("BackgroundMusic");
         _backgroundMusic.SetActive(false);
 
-        GameObject.Find("SettingsMenu").SetActive(false);
+        _settingsMenu = GameObject.Find("SettingsMenu");
+        _settingsMenu.SetActive(false);
     }
 
     private void Update() {
@@ -53,11 +55,13 @@ public class ScreenTitle : MonoBehaviour {
     }
 
     IEnumerator PlayIntro() {
+        var camera = GameObject.Find("Main Camera");
+
         //Add VideoPlayer to the GameObject
-        videoPlayer = gameObject.AddComponent<VideoPlayer>();
+        videoPlayer = camera.AddComponent<VideoPlayer>();
 
         //Add AudioSource
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = camera.AddComponent<AudioSource>();
 
         //Disable Play on Awake for both Video and Audio
         videoPlayer.playOnAwake = false;
@@ -120,12 +124,20 @@ public class ScreenTitle : MonoBehaviour {
 
         videoPlayer.Stop();
 
-        _screenTitle.SetActive(true);
+        _mainMenu.SetActive(true);
         _backgroundMusic.SetActive(true);
     }
 
     private IEnumerator HideSkipTextAfterSecs() {
         yield return new WaitForSeconds(5f);
         _isIntroSkipped = true;
+    }
+
+    public GameObject GetMainMenu() {
+        return _mainMenu;
+    }
+
+    public GameObject GetSettingsMenu() {
+        return _settingsMenu;
     }
 }

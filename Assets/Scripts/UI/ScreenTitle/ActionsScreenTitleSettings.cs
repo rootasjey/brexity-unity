@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ActionButtonSettingsMenu : MonoBehaviour {
-    private GameObject _mainMenu, _settingsMenu;
+public class ActionsScreenTitleSettings : MonoBehaviour {
     private MenuNavigation _menuNavigation;
     private Slider _audioSlider;
     private AudioSource _backgroundMusic;
+
+    private ScreenTitleOrchestrator _orchestrator;
 
     // Use this for initialization
     void Start () {
@@ -15,8 +14,8 @@ public class ActionButtonSettingsMenu : MonoBehaviour {
     }
 
     private void InitializeComponents() {
-        _mainMenu = GameObject.Find("MainMenu");
-        _settingsMenu = GameObject.Find("SettingsMenu");
+        _orchestrator = GameObject.Find("Orchestrator")
+                        .GetComponent<ScreenTitleOrchestrator>();
 
         _menuNavigation = GetComponent<MenuNavigation>();
         _audioSlider = GameObject.Find("ButtonAudio")
@@ -27,7 +26,7 @@ public class ActionButtonSettingsMenu : MonoBehaviour {
     }
 
     private void Update() {
-        if (!_settingsMenu.activeSelf) return;
+        if (!_orchestrator.GetSettingsMenu().activeSelf) return;
 
         if (_menuNavigation.GetCursorIndex() == 0) {
             _audioSlider.interactable = true;
@@ -48,8 +47,8 @@ public class ActionButtonSettingsMenu : MonoBehaviour {
     }
 
     public void BackToMainMenu() {
-        _settingsMenu.SetActive(false);
-        _mainMenu.SetActive(true);
+        _orchestrator.GetSettingsMenu().SetActive(false);
+        _orchestrator.GetMainMenu().SetActive(true);
 
         SaveSettings();
     }

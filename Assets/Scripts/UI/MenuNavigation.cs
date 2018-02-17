@@ -11,6 +11,8 @@ public class MenuNavigation : MonoBehaviour {
     private int _buttonsCount = 0;
     private int _cursorIndex = -1;
 
+    private Color _initialColor;
+
 	void Start () {
         _buttonsList = new List<Button>(gameObject.GetComponentsInChildren<Button>());
         _buttonsCount = _buttonsList.Count;
@@ -55,7 +57,7 @@ public class MenuNavigation : MonoBehaviour {
     private void SetInitialTextColor() {
         foreach (var button in _buttonsList) {
             var textComponent = button.gameObject.GetComponentInChildren<Text>();
-            textComponent.color = Color.white;
+            textComponent.color = _initialColor;
 
             button.gameObject.transform.localScale = new Vector3(1, 1, 0);
         }
@@ -98,6 +100,10 @@ public class MenuNavigation : MonoBehaviour {
 
             eventTrigger.triggers.Add(pointerEnterTrigger);
             eventTrigger.triggers.Add(pointerExitTrigger);
+
+            if (i == 0) {
+                _initialColor = button.gameObject.GetComponentInChildren<Text>().color;
+            }
         }
     }
 }
