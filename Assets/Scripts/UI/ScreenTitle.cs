@@ -11,6 +11,7 @@ public class ScreenTitle : MonoBehaviour {
     public Font fontScreenMatrix;
 
     private GameObject _screenTitle;
+    private GameObject _backgroundMusic;
 
     private bool _isIntroSkipped = false;
     private GUIContent _hintSkipText;
@@ -20,15 +21,23 @@ public class ScreenTitle : MonoBehaviour {
     private AudioSource audioSource;
 
     private void Start() {
-        _screenTitle = GameObject.Find("Menu");
-        _screenTitle.SetActive(false);
-
+        InitializeComponents();
         InitFontStyle();
 
         Application.runInBackground = true;
 
         StartCoroutine(PlayIntro());
         StartCoroutine(HideSkipTextAfterSecs());
+    }
+
+    private void InitializeComponents() {
+        _screenTitle = GameObject.Find("MainMenu");
+        _screenTitle.SetActive(false);
+
+        _backgroundMusic = GameObject.Find("BackgroundMusic");
+        _backgroundMusic.SetActive(false);
+
+        GameObject.Find("SettingsMenu").SetActive(false);
     }
 
     private void Update() {
@@ -112,6 +121,7 @@ public class ScreenTitle : MonoBehaviour {
         videoPlayer.Stop();
 
         _screenTitle.SetActive(true);
+        _backgroundMusic.SetActive(true);
     }
 
     private IEnumerator HideSkipTextAfterSecs() {

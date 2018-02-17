@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuNavigation : MonoBehaviour {
-
     private List<Button> _buttonsList;
+
     private int _buttonsCount = 0;
     private int _cursorIndex = -1;
 
@@ -46,6 +46,10 @@ public class MenuNavigation : MonoBehaviour {
         textComponent.color = Color.yellow;
 
         buttonSelected.gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 0);
+    }
+
+    public int GetCursorIndex() {
+        return _cursorIndex;
     }
 
     private void SetInitialTextColor() {
@@ -95,19 +99,5 @@ public class MenuNavigation : MonoBehaviour {
             eventTrigger.triggers.Add(pointerEnterTrigger);
             eventTrigger.triggers.Add(pointerExitTrigger);
         }
-    }
-
-    // BUTTONS CLICK CALLBACKS
-    // -----------------------
-    public void StartGame() {
-        SceneManager.LoadScene("Stage2_town");
-    }
-
-    public void GoToSettings() {
-
-    }
-
-    public void ExitGame() {
-        ExitGame();
     }
 }
