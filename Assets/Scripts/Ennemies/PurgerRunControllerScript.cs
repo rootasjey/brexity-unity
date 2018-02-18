@@ -16,12 +16,9 @@ public class PurgerRunControllerScript : MonoBehaviour {
     public float rangeFollow = 2f;
     [Range(-1,1)]
     public int direction = 1;
-    // Animator link to character
-    //public Animator anim;
 
     // Use this for initialization
     void Start () {
-        //anim = GetComponent<Animator>();
         actualSpeed = walkSpeed;
         playerLocation = Vector2.zero;
         initialPosition = transform.position;
@@ -31,30 +28,27 @@ public class PurgerRunControllerScript : MonoBehaviour {
     {
         if (playerDetected)
         {
-            //Vector2.Distance(new Vector2(transform.position.x, transform.position.y), playerLocation);
-            //if (range <= 15f)
-            //{
             Vector2 directionToGoToPlayer = playerLocation - new Vector2(transform.position.x, transform.position.y);
-            Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
+            //Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
             if (Mathf.Abs(directionToGoToPlayer.x) > rangeFollow) {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(direction * actualSpeed, GetComponent<Rigidbody2D>().velocity.y);
             }
         }
         else
         {
-            Debug.Log("return in position => " + returnInitPosition);
+            // Debug.Log("return in position => " + returnInitPosition);
             if (returnInitPosition)
             {
                 Vector2 directionToGoToInitPos = initialPosition - new Vector2(transform.position.x, transform.position.y);
-                Debug.Log("direction => " + directionToGoToInitPos + " || actualSpeed" + actualSpeed + " || direction to Go => " + Mathf.Abs(directionToGoToInitPos.x));
+                //Debug.Log("direction => " + directionToGoToInitPos + " || actualSpeed" + actualSpeed + " || direction to Go => " + Mathf.Abs(directionToGoToInitPos.x));
                 if (Mathf.Abs(directionToGoToInitPos.x) > 0.1 ||     Mathf.Abs(directionToGoToInitPos.x) < -0.1)
                 {
-                    Debug.Log("direction to Go Normalize x => " + directionToGoToInitPos.normalized.x);
-                    Debug.Log("direction => "+ direction);
-                    Debug.Log("condition => " + directionToGoToInitPos.normalized.x * direction);
+                    //Debug.Log("direction to Go Normalize x => " + directionToGoToInitPos.normalized.x);
+                    //Debug.Log("direction => "+ direction);
+                    //Debug.Log("condition => " + directionToGoToInitPos.normalized.x * direction);
                     if (!(directionToGoToInitPos.normalized.x * direction > 0))
                     {
-                        Debug.Log("FLIP");
+                        //Debug.Log("FLIP");
                         direction *= -1;
                         GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
                     }
