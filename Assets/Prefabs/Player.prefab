@@ -26,7 +26,8 @@ GameObject:
   - component: {fileID: 114207371334893162}
   - component: {fileID: 114949712139065104}
   - component: {fileID: 95100406634524980}
-  m_Layer: 9
+  - component: {fileID: 114200869011986940}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4046437241037264}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -67,8 +68,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1260656822724644}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7, y: -0.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4890823, y: -3.2029748, z: 5}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4046437241037264}
@@ -138,12 +139,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c211774783974640aaa998733b9dea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxWalkSpeed: 2
-  maxRunSpeed: 5
+  maxWalkSpeed: 5
+  maxRunSpeed: 20
   actualSpeed: 0
   facingRight: 1
   anim: {fileID: 95100406634524980}
   freezeMovement: 0
+  canRun: 1
+--- !u!114 &114200869011986940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260656822724644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dcece2093ffc684487569fbca55bb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Life: 100
 --- !u!114 &114207371334893162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,12 +169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897746dcc962dc04da8a41d50cb66c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 1
+  jumpForce: 8.1
   groundCheck: {fileID: 4046437241037264}
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294966783
   anim: {fileID: 95100406634524980}
+  onLadder: 0
 --- !u!114 &114949712139065104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -174,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallMultiplier: 2
   lowJumpMultiplier: 2
+  applyCustomGravity: 1
 --- !u!212 &212476732756342032
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -205,9 +221,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -875395467
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -435157703
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: a6e0b805d403c8042bd5e4bb688134c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

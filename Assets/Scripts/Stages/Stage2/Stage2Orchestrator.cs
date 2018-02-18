@@ -13,6 +13,7 @@ public class Stage2Orchestrator : MonoBehaviour {
 
     private void Start() {
         InitializeComponents();
+        InitializePreferences();
 
         Time.timeScale = 1;
     }
@@ -67,6 +68,10 @@ public class Stage2Orchestrator : MonoBehaviour {
         Time.timeScale = 1;
 
         _backgroundMusic.volume = _lastVolumeValue;
+    }
+
+    public void SetLastSavedVolume(float value) {
+        _lastVolumeValue = value;
     }
 
     public GameObject GetPauseMenu() {

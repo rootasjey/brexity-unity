@@ -61,5 +61,7 @@ public class ActionsPauseSettings : MonoBehaviour {
     private void SaveSettings() {
         PlayerPrefs.SetFloat("MasterVolume", _audioSlider.value);
         PlayerPrefs.Save();
+
+        _orchestrator.SetLastSavedVolume(_audioSlider.value);
     }
 }

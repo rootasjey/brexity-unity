@@ -30,7 +30,9 @@ public class PurgerStaticDetectControllerScript : MonoBehaviour {
             //If there is only one object, so there is no obstacle between player and purger
             if (checkIfObstacles.Length == 1)
             {
-                Debug.Log("YOU ARE DEAD");
+                //Debug.Log("YOU ARE DEAD");
+                var playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+                playerStats.Kill();
             }
         }
 

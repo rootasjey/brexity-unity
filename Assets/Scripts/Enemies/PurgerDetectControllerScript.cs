@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PurgerDetectControllerScript : MonoBehaviour {
 
@@ -55,7 +53,9 @@ public class PurgerDetectControllerScript : MonoBehaviour {
                 //Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
                 if (Mathf.Abs(directionToGoToPlayer.x) < deadlySight)
                 {
-                    Debug.Log("YOU ARE DEAD!");
+                    //Debug.Log("YOU ARE DEAD!");
+                    var playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+                    playerStats.Kill();
                 }
                 //set player detected to true, up his speed, save player location, and set detection timer
                 // Debug.Log("Player Detected and check if there is a obstacle => "+checkIfObstacles.Length);
