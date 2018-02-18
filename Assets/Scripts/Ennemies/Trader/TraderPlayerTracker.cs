@@ -24,11 +24,15 @@ public class TraderPlayerTracker : MonoBehaviour {
         if (!isActive) return;
 
         if (_traderRigidBody.gravityScale == 1) { // already falling
+            StartFaillindSound();
+
             var animator = GetComponent<Animator>();
             var traderIsOnFloor = animator.GetBool("Ground_Touch");
             
 
             if (traderIsOnFloor && !_resetingState) {
+                //StopFaillindSound();
+
                 _resetingState = true;
 
                 var coroutine = ResetTraderProperties();
@@ -68,5 +72,19 @@ public class TraderPlayerTracker : MonoBehaviour {
 
         var animator = GetComponent<Animator>();
         animator.Rebind();
+    }
+
+    private void StartFaillindSound() {
+        var sound = transform.Find("FallingSound");
+        if (sound.gameObject.activeSelf) return;
+
+        sound.gameObject.SetActive(true);
+    }
+
+    private void StopFaillindSound() {
+        var sound = transform.Find("FallingSound");
+        if (!sound.gameObject.activeSelf) return;
+
+        sound.gameObject.SetActive(false);
     }
 }

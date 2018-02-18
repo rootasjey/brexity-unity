@@ -8,18 +8,19 @@ public class DeathScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
-        gameObject.SetActive(false);
-	}
+        ChooseRandomTitle();
+        //_playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+        //gameObject.SetActive(false);
+    }
 	
 	// Update is called once per frame
-	void Update () {
-        if (_playerStats.IsDead()) {
-            gameObject.SetActive(true);
-            ChooseRandomTitle();
-            Time.timeScale = 0;
-        }
-	}
+	//void Update () {
+ //       if (_playerStats.IsDead()) {
+ //           gameObject.SetActive(true);
+ //           ChooseRandomTitle();
+ //           Time.timeScale = 0;
+ //       }
+	//}
 
     private void ChooseRandomTitle() {
         var titles = new List<string>() {
@@ -30,9 +31,11 @@ public class DeathScreen : MonoBehaviour {
         };
 
         var randomNumber = new System.Random().Next(0, titles.Count);
-            
-        var title = transform.Find("Title");
-        var textTitle = title.GetComponent<Text>();
+
+        var buttons = transform.Find("Buttons");
+        var title = buttons.Find("Title");
+
+        var textTitle = title.gameObject.GetComponent<Text>();
         textTitle.text = titles[randomNumber];
     }
 }

@@ -487,6 +487,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1260656822724644, guid: a47b9758a0a0c2d4e83c42ad46062a59,
     type: 2}
   m_PrefabInternal: {fileID: 1381282746}
+--- !u!114 &62820652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62820651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dcece2093ffc684487569fbca55bb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Life: 100
 --- !u!4 &62820659 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4548418689933066, guid: a47b9758a0a0c2d4e83c42ad46062a59,
@@ -1846,7 +1858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &435074277
 MonoBehaviour:
@@ -2781,7 +2793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845839589
 GameObject:
@@ -3497,7 +3509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966724814}
   - component: {fileID: 966724815}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: FallingSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5069,7 +5081,7 @@ GameObject:
   - component: {fileID: 1352944367}
   - component: {fileID: 1352944368}
   - component: {fileID: 1352944369}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Trader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 62820659}
-  timeBeforeTrigger: 10
+  timeBeforeTrigger: 4
   isActive: 1
 --- !u!1001 &1381282746
 Prefab:
@@ -5397,7 +5409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413339898}
   - component: {fileID: 1413339899}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LandingSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7002,7 +7014,7 @@ RectTransform:
   m_Children:
   - {fileID: 1681390630}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
