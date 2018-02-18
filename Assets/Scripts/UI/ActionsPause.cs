@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ActionsPause : MonoBehaviour {
@@ -10,6 +8,10 @@ public class ActionsPause : MonoBehaviour {
     void Start () {
         _orchestrator = GameObject.Find("Orchestrator")
                         .GetComponent<Stage2Orchestrator>();
+    }
+
+    public void Restart() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Resume() {

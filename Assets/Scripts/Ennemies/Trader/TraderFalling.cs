@@ -1,14 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TraderFalling : MonoBehaviour {
     public LayerMask Ground;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 
     private void FixedUpdate() {
         var animator = GetComponent<Animator>();
@@ -28,5 +21,9 @@ public class TraderFalling : MonoBehaviour {
                 animator.SetBool("Ground_Touch", true);
             }
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        
     }
 }

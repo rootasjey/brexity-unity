@@ -4,8 +4,8 @@ public class Stage2Orchestrator : MonoBehaviour {
 
     private GameObject _pauseMenu;
     private GameObject _settingsMenu;
-
     private AudioSource _backgroundMusic;
+    private PlayerStats _playerStats;
 
     private float _lastVolumeValue = 1;
 
@@ -16,6 +16,8 @@ public class Stage2Orchestrator : MonoBehaviour {
     }
 
     private void Update() {
+        if (_playerStats.IsDead()) return;
+
         if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape)) {
             if (_pauseMenu.activeSelf) {
                 ResumeGame();
@@ -39,6 +41,8 @@ public class Stage2Orchestrator : MonoBehaviour {
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
                             .GetComponent<AudioSource>();
+
+        _playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
 
         GameObject.Find("GamePlay").SetActive(false);
         GameObject.Find("BackgroundMusic").SetActive(false);
