@@ -13,7 +13,10 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public float height = 0f;
 
     public float detectionTimer = 0;
+    public float envDetectionTimer = 0;
     public float maxDetectionTimer = 5f;
+    public float maxEnvDetectionTimer = 2f;
+
 
     public Vector2 purgerDirection = Vector2.right;
 
@@ -50,6 +53,7 @@ public class PurgerDetectControllerScript : MonoBehaviour {
                 //set player detected to true, up his speed, save player location, and set detection timer
                 Debug.Log("Player Detected and check if there is a obstacle => "+checkIfObstacles.Length);
                 GetComponent<PurgerRunControllerScript>().playerDetected = true;
+                GetComponent<PurgerRunControllerScript>().returnInitPosition = false;
                 GetComponent<PurgerRunControllerScript>().actualSpeed = GetComponent<PurgerRunControllerScript>().runSpeed;
                 GetComponent<PurgerRunControllerScript>().playerLocation = hit.point;
                 detectionTimer = maxDetectionTimer;
@@ -71,20 +75,34 @@ public class PurgerDetectControllerScript : MonoBehaviour {
         if (GetComponent<PurgerRunControllerScript>().playerDetected && detectionTimer == 0)
         {
             GetComponent<PurgerRunControllerScript>().playerDetected = false;
+            GetComponent<PurgerRunControllerScript>().returnInitPosition = true;
             GetComponent<PurgerRunControllerScript>().actualSpeed = GetComponent<PurgerRunControllerScript>().walkSpeed;
         }
 
         //Cast a ray to detect his environment limit 
-        RaycastHit2D hitObstacle = Physics2D.Raycast(transform.position, purgerDirection, distanceToSeeObstacle, purgerWall);
-        Debug.DrawRay(transform.position, purgerDirection * distanceToSeeObstacle, Color.red);
+        RaycastHit2D hitObstacle = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeeObstacle, purgerWall);
+        Debug.DrawRay(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction * distanceToSeeObstacle, Color.red);
 
         //If purger meet a limitation and he is not chasing player so change direction
-        if (hitObstacle.collider != null && !GetComponent<PurgerRunControllerScript>().playerDetected)
+        if (hitObstacle.collider != null && !GetComponent<PurgerRunControllerScript>().playerDetected && !GetComponent<PurgerRunControllerScript>().returnInitPosition)
         {
-            //set purger direction to his opposite
-            purgerDirection = purgerDirection * -1;
-            GetComponent<PurgerRunControllerScript>().direction *= -1;
-            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+            if (envDetectionTimer == 0) {
+                //set purger direction to his opposite
+                //purgerDirection = purgerDirection * -1;
+                Debug.Log("FLIPPPPPP");
+                envDetectionTimer = maxEnvDetectionTimer;
+                GetComponent<PurgerRunControllerScript>().direction *= -1;
+                GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
+                GetComponent<PurgerRunControllerScript>().actualSpeed = GetComponent<PurgerRunControllerScript>().walkSpeed;
+            }
+            else
+            {
+                GetComponent<PurgerRunControllerScript>().actualSpeed = 0;
+                envDetectionTimer = (envDetectionTimer <= 0) ? 0 : envDetectionTimer - 1 * Time.fixedDeltaTime;
+            }
+        } else
+        {
+            envDetectionTimer = maxEnvDetectionTimer;
         }
         
     }

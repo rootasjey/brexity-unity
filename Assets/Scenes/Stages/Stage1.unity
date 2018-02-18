@@ -650,7 +650,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.003089}
+  m_Size: {x: 0.05, y: 4.003089}
   m_EdgeRadius: 0
 --- !u!4 &540984308 stripped
 Transform:
@@ -1103,7 +1103,9 @@ MonoBehaviour:
   walkSpeed: 2
   runSpeed: 5
   actualSpeed: 0
+  initialPosition: {x: 0, y: 0}
   playerDetected: 0
+  returnInitPosition: 0
   playerLocation: {x: 0, y: 0}
   rangeFollow: 2
   direction: 1
@@ -1131,7 +1133,9 @@ MonoBehaviour:
   distanceToSeeObstacle: 2
   height: 0
   detectionTimer: 5
+  envDetectionTimer: 0
   maxDetectionTimer: 5
+  maxEnvDetectionTimer: 2
   purgerDirection: {x: 1, y: 0}
 --- !u!4 &1054724409
 Transform:
@@ -1190,7 +1194,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.5015445}
+  m_Offset: {x: -0.5, y: 1.5015445}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1201,7 +1205,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.003089}
+  m_Size: {x: 0.05, y: 4.003089}
   m_EdgeRadius: 0
 --- !u!1 &1451222443
 GameObject:
