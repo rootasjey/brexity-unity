@@ -8,7 +8,8 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public LayerMask obstacleLayer;
     public LayerMask purgerWall;
 
-    public float distanceToSeePlater = 5f;
+    public float distanceToSeePlayer = 5f;
+    public float deadlySight = 2f;
     public float distanceToSeeObstacle = 2f;
     public float height = 0f;
 
@@ -17,14 +18,13 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public float maxDetectionTimer = 5f;
     public float maxEnvDetectionTimer = 2f;
 
-
     public Vector2 purgerDirection = Vector2.right;
 
     void FixedUpdate()
     {
         //Cast a ray to detect the player
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeePlater, playerLayer);
-        Debug.DrawRay(transform.position, transform.right * distanceToSeePlater * GetComponent<PurgerRunControllerScript>().direction, Color.green);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeePlayer, playerLayer);
+        Debug.DrawRay(transform.position, transform.right * distanceToSeePlayer * GetComponent<PurgerRunControllerScript>().direction, Color.green);
 
         //RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(distanceToSee, height), new Vector2(distanceToSee, height).magnitude/*Mathf.Sqrt(Mathf.Pow(distanceToSee, 2)+ Mathf.Pow(height, 2))*/, playerLayer);
         //Debug.DrawRay(transform.position, new Vector2(distanceToSee, height), Color.green);
@@ -50,8 +50,15 @@ public class PurgerDetectControllerScript : MonoBehaviour {
             //If there is only one object, so there is no obstacle between player and purger
             if (checkIfObstacles.Length == 1)
             {
+
+                Vector2 directionToGoToPlayer = hit.point - new Vector2(transform.position.x, transform.position.y);
+                //Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
+                if (Mathf.Abs(directionToGoToPlayer.x) < deadlySight)
+                {
+                    Debug.Log("YOU ARE DEAD!");
+                }
                 //set player detected to true, up his speed, save player location, and set detection timer
-                Debug.Log("Player Detected and check if there is a obstacle => "+checkIfObstacles.Length);
+                // Debug.Log("Player Detected and check if there is a obstacle => "+checkIfObstacles.Length);
                 GetComponent<PurgerRunControllerScript>().playerDetected = true;
                 GetComponent<PurgerRunControllerScript>().returnInitPosition = false;
                 GetComponent<PurgerRunControllerScript>().actualSpeed = GetComponent<PurgerRunControllerScript>().runSpeed;
@@ -89,7 +96,7 @@ public class PurgerDetectControllerScript : MonoBehaviour {
             if (envDetectionTimer == 0) {
                 //set purger direction to his opposite
                 //purgerDirection = purgerDirection * -1;
-                Debug.Log("FLIPPPPPP");
+                // Debug.Log("FLIPPPPPP");
                 envDetectionTimer = maxEnvDetectionTimer;
                 GetComponent<PurgerRunControllerScript>().direction *= -1;
                 GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
