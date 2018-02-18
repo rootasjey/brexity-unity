@@ -23,6 +23,8 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
                             .GetComponent<AudioSource>();
+
+        _audioSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
     }
 
     private void Update() {
@@ -58,6 +60,7 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
     }
 
     private void SaveSettings() {
-
+        PlayerPrefs.SetFloat("MasterVolume", _audioSlider.value);
+        PlayerPrefs.Save();
     }
 }

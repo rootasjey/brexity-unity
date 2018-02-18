@@ -44,6 +44,11 @@ public class Stage2Orchestrator : MonoBehaviour {
         GameObject.Find("BackgroundMusic").SetActive(false);
     }
 
+    private void InitializePreferences() {
+        var volumeSaved = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        _backgroundMusic.volume = volumeSaved;
+    }
+
     public void ResumeGame() {
         _pauseMenu.SetActive(false);
         Time.timeScale = 1;

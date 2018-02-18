@@ -6,6 +6,7 @@ public class ScreenTitleOrchestrator : MonoBehaviour {
 
     private void Start() {
         InitializeComponents();
+        InitializePreferences();
     }
 
     private void InitializeComponents() {
@@ -19,6 +20,11 @@ public class ScreenTitleOrchestrator : MonoBehaviour {
         _settingsMenu.SetActive(false);
     }
     
+    private void InitializePreferences() {
+        var volumeSaved = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        var audio = _backgroundMusic.GetComponent<AudioSource>();
+        audio.volume = volumeSaved;
+    }
 
     public GameObject GetMainMenu() {
         return _mainMenu;

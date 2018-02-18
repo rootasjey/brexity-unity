@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ActionsPauseSettings : MonoBehaviour {
@@ -24,6 +22,8 @@ public class ActionsPauseSettings : MonoBehaviour {
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
                             .GetComponent<AudioSource>();
+
+        _audioSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
     }
 
     private void Update() {
@@ -59,6 +59,7 @@ public class ActionsPauseSettings : MonoBehaviour {
     }
 
     private void SaveSettings() {
-
+        PlayerPrefs.SetFloat("MasterVolume", _audioSlider.value);
+        PlayerPrefs.Save();
     }
 }
