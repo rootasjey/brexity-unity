@@ -39,6 +39,9 @@ public class Stage2Orchestrator : MonoBehaviour {
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
                             .GetComponent<AudioSource>();
+
+        GameObject.Find("GamePlay").SetActive(false);
+        GameObject.Find("BackgroundMusic").SetActive(false);
     }
 
     public void ResumeGame() {

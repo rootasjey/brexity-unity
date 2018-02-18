@@ -31,7 +31,7 @@ public class MenuNavigation : MonoBehaviour {
             _cursorIndex = _cursorIndex % _buttonsCount;
         }
 
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Return)) {
             ValidateChoice();
         }
 	}
