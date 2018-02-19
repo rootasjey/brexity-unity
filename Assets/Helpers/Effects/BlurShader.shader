@@ -4,6 +4,7 @@ Shader "Unlit/FrostedGlass"
 {
 	Properties
 	{
+		_MainTex("Base (RGB)", 2D) = "white" {}
 		_Radius("Radius", Range(1, 255)) = 1
 	}
 

@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 61974375816498372}
   - component: {fileID: 95123314087492274}
   - component: {fileID: 114010988088797622}
-  - component: {fileID: 114094917898636930}
   m_Layer: 14
   m_Name: Trader
   m_TagString: Untagged
@@ -341,20 +340,6 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 1024
---- !u!114 &114094917898636930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1631329963313486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0906b8b360fd1746afb08427901d0b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  timeBeforeTrigger: 4
-  isActive: 1
 --- !u!212 &212411614864366500
 SpriteRenderer:
   m_ObjectHideFlags: 1
