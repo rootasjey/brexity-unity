@@ -340,6 +340,26 @@ MonoBehaviour:
   Ground:
     serializedVersion: 2
     m_Bits: 1024
+  reactionVoices:
+  - {fileID: 8300000, guid: a4a406f1ce9ab4d45ad6cf9ecd2cf71d, type: 3}
+  - {fileID: 8300000, guid: 0f61aa20c1beeda4d8e51aff337f64c9, type: 3}
+  - {fileID: 8300000, guid: dde5925ec7e969a4da1705bdbe5be5d2, type: 3}
+  - {fileID: 8300000, guid: 4f8ae8b87060b1c47b573121a0194d80, type: 3}
+  - {fileID: 8300000, guid: ed524aff2b97e464881cd6d618ab87de, type: 3}
+  - {fileID: 8300000, guid: ab6ea526356cf584384d715846fab141, type: 3}
+  - {fileID: 8300000, guid: 5a530a745de13724bb3393ea080fc30a, type: 3}
+  - {fileID: 8300000, guid: c990f132787ec6044b7bb97da5ba91ec, type: 3}
+  - {fileID: 8300000, guid: 16143d1615e2b524e95f48c46e3b355d, type: 3}
+  - {fileID: 8300000, guid: 3f2337ffda5cd20449a2cc20474ef6b2, type: 3}
+  - {fileID: 8300000, guid: d768f208295e5e540a1e3009f7144f5b, type: 3}
+  - {fileID: 8300000, guid: e7532750714dacc469c52ee47c580aa7, type: 3}
+  - {fileID: 8300000, guid: 9988f714ace7ee84c807252222bad491, type: 3}
+  - {fileID: 8300000, guid: 914b9034629c4fd4d8659ff265015a20, type: 3}
+  - {fileID: 8300000, guid: a1d53e5a54ef6894ea85d1846dce1e75, type: 3}
+  - {fileID: 8300000, guid: 3596b23aa9089d94698481ab150ec4a9, type: 3}
+  - {fileID: 8300000, guid: ba3a68c6b60332445a9663fa5d053e82, type: 3}
+  - {fileID: 8300000, guid: 42764e0c8d5281b4aa6561de523e86ac, type: 3}
+  - {fileID: 8300000, guid: 2dc27723e2cb1c7478ef5dd336747339, type: 3}
 --- !u!212 &212411614864366500
 SpriteRenderer:
   m_ObjectHideFlags: 1

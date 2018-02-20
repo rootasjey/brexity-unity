@@ -55,7 +55,7 @@ public class Stage2Orchestrator : MonoBehaviour {
         _deathScreen.SetActive(false);
 
         GameObject.Find("GamePlay").SetActive(false);
-        GameObject.Find("BackgroundMusic").SetActive(false);
+        GameObject.Find("Audio").SetActive(false);
     }
 
     private void InitializePreferences() {
