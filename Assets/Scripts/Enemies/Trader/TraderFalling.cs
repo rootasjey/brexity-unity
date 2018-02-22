@@ -33,6 +33,7 @@ public class TraderFalling : MonoBehaviour {
 
         var clip = reactionVoices[Random.Range(0, reactionVoices.Length)];
         var audioSource = gameObject.AddComponent<AudioSource>();
+
         audioSource.clip = clip;
         audioSource.Play();
     }
