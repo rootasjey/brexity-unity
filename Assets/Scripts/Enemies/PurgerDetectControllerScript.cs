@@ -9,7 +9,7 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public float distanceToSeePlayer = 5f;
     public float deadlySight = 2f;
     public float distanceToSeeObstacle = 2f;
-    public float height = 0f;
+    public float height = 2f;
 
     public float detectionTimer = 0;
     public float envDetectionTimer = 0;
@@ -24,8 +24,8 @@ public class PurgerDetectControllerScript : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeePlayer, playerLayer);
         Debug.DrawRay(transform.position, transform.right * distanceToSeePlayer * GetComponent<PurgerRunControllerScript>().direction, Color.green);
 
-        //RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(distanceToSee, height), new Vector2(distanceToSee, height).magnitude/*Mathf.Sqrt(Mathf.Pow(distanceToSee, 2)+ Mathf.Pow(height, 2))*/, playerLayer);
-        //Debug.DrawRay(transform.position, new Vector2(distanceToSee, height), Color.green);
+        // RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(distanceToSeePlayer, height), new Vector2(distanceToSeePlayer, height).magnitude, playerLayer);
+        // Debug.DrawRay(transform.position, new Vector2(distanceToSeePlayer, height), Color.green);
 
 
         //RaycastHit2D hitBottom = Physics2D.Raycast(transform.position, new Vector2(distanceToSee, -height), Mathf.Sqrt(Mathf.Pow(distanceToSee, 2) + Mathf.Pow(height, 2)), playerLayer);
@@ -91,6 +91,7 @@ public class PurgerDetectControllerScript : MonoBehaviour {
         Debug.DrawRay(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction * distanceToSeeObstacle, Color.red);
 
         //If purger meet a limitation and he is not chasing player so change direction
+        Debug.Log(hitObstacle.collider + " || " + !GetComponent<PurgerRunControllerScript>().playerDetected + " || " + !GetComponent<PurgerRunControllerScript>().returnInitPosition);
         if (hitObstacle.collider != null && !GetComponent<PurgerRunControllerScript>().playerDetected && !GetComponent<PurgerRunControllerScript>().returnInitPosition)
         {
             if (envDetectionTimer == 0) {
