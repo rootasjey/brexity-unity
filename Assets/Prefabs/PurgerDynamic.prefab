@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4765336978176638}
   - component: {fileID: 50091637935997192}
   - component: {fileID: 212503188545976688}
-  - component: {fileID: 58904098612157646}
   - component: {fileID: 114571383400783508}
   - component: {fileID: 114476058464308756}
+  - component: {fileID: 61114667276339260}
   m_Layer: 11
   m_Name: PurgerDynamic
   m_TagString: Untagged
@@ -55,7 +55,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58904098612157646
-CircleCollider2D:
+--- !u!61 &61114667276339260
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,9 +76,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09, y: -1.47}
+  m_Offset: {x: 0, y: -1.5827227}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.24, y: 3.2}
+    newSize: {x: 0.4, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.06
+  m_Size: {x: 1.24, y: 0.003}
+  m_EdgeRadius: 0
 --- !u!114 &114476058464308756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,11 +112,12 @@ MonoBehaviour:
   distanceToSeePlayer: 5
   deadlySight: 2
   distanceToSeeObstacle: 2
-  height: 0
+  height: 3
   detectionTimer: 5
   envDetectionTimer: 0
   maxDetectionTimer: 5
   maxEnvDetectionTimer: 2
+  minimumStealth: 50
   purgerDirection: {x: 1, y: 0}
 --- !u!114 &114571383400783508
 MonoBehaviour:

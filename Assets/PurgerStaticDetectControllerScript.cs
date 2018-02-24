@@ -15,6 +15,13 @@ public class PurgerStaticDetectControllerScript : MonoBehaviour {
     [Range(-1, 1)]
     public int direction = 1;
 
+    private PlayerStats playerStats;
+    private float minimumStealth = 50f;
+    private void Start()
+    {
+         playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+    }
+
     void FixedUpdate()
     {
 
@@ -48,10 +55,8 @@ public class PurgerStaticDetectControllerScript : MonoBehaviour {
             RaycastHit2D[] checkIfObstacles = Physics2D.RaycastAll(transform.position, hit.point - new Vector2(transform.position.x, transform.position.y), (hit.point - new Vector2(transform.position.x, transform.position.y)).magnitude, obstacleLayer);
 
             //If there is only one object, so there is no obstacle between player and purger
-            if (checkIfObstacles.Length == 1)
+            if (checkIfObstacles.Length == 1 && playerStats.stealth < minimumStealth)
             {
-                //Debug.Log("YOU ARE DEAD");
-                var playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
                 playerStats.Kill();
             }
         }

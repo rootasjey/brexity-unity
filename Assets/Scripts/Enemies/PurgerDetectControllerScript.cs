@@ -16,8 +16,16 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public float maxDetectionTimer = 5f;
     public float maxEnvDetectionTimer = 2f;
 
+    public float minimumStealth = 50f;
+
     public Vector2 purgerDirection = Vector2.right;
 
+    private PlayerStats playerStats;
+
+    private void Start()
+    {
+       playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
+    }
     void FixedUpdate()
     {
         //Cast a ray to detect the player
@@ -51,14 +59,13 @@ public class PurgerDetectControllerScript : MonoBehaviour {
             RaycastHit2D[] checkIfObstacles = Physics2D.RaycastAll(transform.position, hit.point - new Vector2(transform.position.x, transform.position.y), (hit.point - new Vector2(transform.position.x, transform.position.y)).magnitude, obstacleLayer);
             
             //If there is only one object, so there is no obstacle between player and purger
-            if (checkIfObstacles.Length == 1)
+            if (checkIfObstacles.Length == 1 && playerStats.stealth < minimumStealth)
             {
 
                 Vector2 directionToGoToPlayer = hit.point - new Vector2(transform.position.x, transform.position.y);
                 if (Mathf.Abs(directionToGoToPlayer.x) < deadlySight)
                 {
-                    var playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
-                    playerStats.Kill();
+                  playerStats.Kill();
                 }
                 //set player detected to true, up his speed, save player location, and set detection timer
                 GetComponent<PurgerRunControllerScript>().playerDetected = true;

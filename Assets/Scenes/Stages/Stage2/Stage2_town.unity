@@ -5300,11 +5300,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114904489684028326, guid: a47b9758a0a0c2d4e83c42ad46062a59,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a47b9758a0a0c2d4e83c42ad46062a59, type: 2}
   m_IsPrefabParent: 0
@@ -7700,11 +7695,6 @@ Prefab:
     - target: {fileID: 1718493130880422, guid: e215216e76ac0334794aa2910c05ecd0, type: 2}
       propertyPath: m_Name
       value: PurgerDynamic_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 114476058464308756, guid: e215216e76ac0334794aa2910c05ecd0,
-        type: 2}
-      propertyPath: height
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e215216e76ac0334794aa2910c05ecd0, type: 2}

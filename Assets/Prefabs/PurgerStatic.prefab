@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4757788072051660}
   - component: {fileID: 50404492453379934}
   - component: {fileID: 212858900694885900}
-  - component: {fileID: 58235873180378602}
   - component: {fileID: 114717739103466040}
+  - component: {fileID: 61600953913971668}
   m_Layer: 11
   m_Name: PurgerStatic
   m_TagString: Untagged
@@ -54,7 +54,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58235873180378602
-CircleCollider2D:
+--- !u!61 &61600953913971668
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,9 +75,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19, y: -1.46}
+  m_Offset: {x: -0.2, y: -1.49}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.64, y: 3}
+    newSize: {x: 0.4, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.06
+  m_Size: {x: 0.89, y: 0.003}
+  m_EdgeRadius: 0
 --- !u!114 &114717739103466040
 MonoBehaviour:
   m_ObjectHideFlags: 1
