@@ -8,7 +8,7 @@ public class PurgerStaticDetectControllerScript : MonoBehaviour {
     public LayerMask obstacleLayer;
 
     public float distanceToCatchPlayer = 5f;
-    public float height = 0f;
+    public float height = 3f;
 
     public bool playerDetected = false;
 
@@ -17,13 +17,33 @@ public class PurgerStaticDetectControllerScript : MonoBehaviour {
 
     void FixedUpdate()
     {
+
+        direction *= -1;
         //Cast a ray to detect the player
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * direction, distanceToCatchPlayer, playerLayer);
+        RaycastHit2D hitMiddle = Physics2D.Raycast(transform.position, transform.right * direction, distanceToCatchPlayer, playerLayer);
         Debug.DrawRay(transform.position, transform.right * distanceToCatchPlayer * direction, Color.green);
 
+        RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(direction * distanceToCatchPlayer, height), Mathf.Sqrt(Mathf.Pow(distanceToCatchPlayer, 2) + Mathf.Pow(height, 2)), playerLayer);
+        Debug.DrawRay(transform.position, new Vector2(direction * distanceToCatchPlayer, height), Color.green);
+
+        RaycastHit2D hitBottom = Physics2D.Raycast(transform.position, new Vector2(direction * distanceToCatchPlayer, -height), Mathf.Sqrt(Mathf.Pow(distanceToCatchPlayer, 2) + Mathf.Pow(height, 2)), playerLayer);
+        Debug.DrawRay(transform.position, new Vector2(direction * distanceToCatchPlayer, -height), Color.green);
+
         //If player is detected
-        if (hit.collider != null)
+        if (hitMiddle.collider != null || hitTop.collider != null || hitBottom.collider != null)
         {
+            RaycastHit2D hit;
+
+            if (hitMiddle.collider != null)
+            {
+                hit = hitMiddle;
+            }else if(hitTop.collider != null)
+            {
+                hit = hitTop;
+            }else
+            {
+                hit = hitBottom;
+            }
             //Check if there is a obstacle between player and purger by casting another ray
             RaycastHit2D[] checkIfObstacles = Physics2D.RaycastAll(transform.position, hit.point - new Vector2(transform.position.x, transform.position.y), (hit.point - new Vector2(transform.position.x, transform.position.y)).magnitude, obstacleLayer);
 

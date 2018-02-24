@@ -9,7 +9,7 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     public float distanceToSeePlayer = 5f;
     public float deadlySight = 2f;
     public float distanceToSeeObstacle = 2f;
-    public float height = 2f;
+    public float height = 3f;
 
     public float detectionTimer = 0;
     public float envDetectionTimer = 0;
@@ -21,44 +21,46 @@ public class PurgerDetectControllerScript : MonoBehaviour {
     void FixedUpdate()
     {
         //Cast a ray to detect the player
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeePlayer, playerLayer);
+        RaycastHit2D hitMiddle = Physics2D.Raycast(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction, distanceToSeePlayer, playerLayer);
         Debug.DrawRay(transform.position, transform.right * distanceToSeePlayer * GetComponent<PurgerRunControllerScript>().direction, Color.green);
 
-        // RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(distanceToSeePlayer, height), new Vector2(distanceToSeePlayer, height).magnitude, playerLayer);
-        // Debug.DrawRay(transform.position, new Vector2(distanceToSeePlayer, height), Color.green);
+        RaycastHit2D hitTop = Physics2D.Raycast(transform.position, new Vector2(GetComponent<PurgerRunControllerScript>().direction * distanceToSeePlayer, height), Mathf.Sqrt(Mathf.Pow(distanceToSeePlayer, 2) + Mathf.Pow(height, 2)), playerLayer);
+        Debug.DrawRay(transform.position, new Vector2(GetComponent<PurgerRunControllerScript>().direction * distanceToSeePlayer, height), Color.green);
 
-
-        //RaycastHit2D hitBottom = Physics2D.Raycast(transform.position, new Vector2(distanceToSee, -height), Mathf.Sqrt(Mathf.Pow(distanceToSee, 2) + Mathf.Pow(height, 2)), playerLayer);
-        //Debug.DrawRay(transform.position, new Vector2(distanceToSee, -height), Color.green);
+        RaycastHit2D hitBottom = Physics2D.Raycast(transform.position,  new Vector2(GetComponent<PurgerRunControllerScript>().direction * distanceToSeePlayer, -height), Mathf.Sqrt(Mathf.Pow(distanceToSeePlayer, 2) + Mathf.Pow(height, 2)), playerLayer);
+        Debug.DrawRay(transform.position, new Vector2(GetComponent<PurgerRunControllerScript>().direction * distanceToSeePlayer, -height), Color.green);
         
-        //Debug.Log(detectionTimer);
-
         //If player is detected
-        if (hit.collider != null)
+        if (hitMiddle.collider != null || hitTop.collider != null || hitBottom.collider != null)
         {
-            //Debug.Log("I'm at =>" + new Vector2(transform.position.x, transform.position.y));
-            //Debug.Log("Collider Point Distance => " + (hit.point - new Vector2(transform.position.x, transform.position.y)));
-            //Debug.Log("Magnitude => "+ (hit.point - new Vector2(transform.position.x, transform.position.y)).magnitude);
-
+            RaycastHit2D hit;
+            if (hitMiddle.collider != null)
+            {
+              hit = hitMiddle;
+            }
+            else if (hitTop.collider != null)
+            {
+                hit = hitTop;
+            }
+            else
+            {
+                hit = hitBottom;
+            }
+           
             //Check if there is a obstacle between player and purger by casting another ray
             RaycastHit2D[] checkIfObstacles = Physics2D.RaycastAll(transform.position, hit.point - new Vector2(transform.position.x, transform.position.y), (hit.point - new Vector2(transform.position.x, transform.position.y)).magnitude, obstacleLayer);
-            //Debug.Log(hit.collider.gameObject.GetComponent<PlayerVisibilityControllerScript>().visibility);
-            //Debug.Log("Player Detected ");
             
             //If there is only one object, so there is no obstacle between player and purger
             if (checkIfObstacles.Length == 1)
             {
 
                 Vector2 directionToGoToPlayer = hit.point - new Vector2(transform.position.x, transform.position.y);
-                //Debug.Log("direction => " + directionToGoToPlayer + " || range => " + rangeFollow + " || actualSpeed" + actualSpeed+"  || direction.x => "+ directionToGoToPlayer.x +">"+ "rangeFollow => "+rangeFollow);
                 if (Mathf.Abs(directionToGoToPlayer.x) < deadlySight)
                 {
-                    //Debug.Log("YOU ARE DEAD!");
                     var playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
                     playerStats.Kill();
                 }
                 //set player detected to true, up his speed, save player location, and set detection timer
-                // Debug.Log("Player Detected and check if there is a obstacle => "+checkIfObstacles.Length);
                 GetComponent<PurgerRunControllerScript>().playerDetected = true;
                 GetComponent<PurgerRunControllerScript>().returnInitPosition = false;
                 GetComponent<PurgerRunControllerScript>().actualSpeed = GetComponent<PurgerRunControllerScript>().runSpeed;
@@ -91,13 +93,10 @@ public class PurgerDetectControllerScript : MonoBehaviour {
         Debug.DrawRay(transform.position, transform.right * GetComponent<PurgerRunControllerScript>().direction * distanceToSeeObstacle, Color.red);
 
         //If purger meet a limitation and he is not chasing player so change direction
-        Debug.Log(hitObstacle.collider + " || " + !GetComponent<PurgerRunControllerScript>().playerDetected + " || " + !GetComponent<PurgerRunControllerScript>().returnInitPosition);
         if (hitObstacle.collider != null && !GetComponent<PurgerRunControllerScript>().playerDetected && !GetComponent<PurgerRunControllerScript>().returnInitPosition)
         {
             if (envDetectionTimer == 0) {
                 //set purger direction to his opposite
-                //purgerDirection = purgerDirection * -1;
-                // Debug.Log("FLIPPPPPP");
                 envDetectionTimer = maxEnvDetectionTimer;
                 GetComponent<PurgerRunControllerScript>().direction *= -1;
                 GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
