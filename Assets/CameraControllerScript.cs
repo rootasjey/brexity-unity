@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerVisibilityControllerScript : MonoBehaviour {
-
-    [Range(0,100)]
-    public float visibility;
+public class CameraControllerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

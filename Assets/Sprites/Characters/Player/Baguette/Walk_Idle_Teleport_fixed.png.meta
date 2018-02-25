@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 607a0ae560a60b64da65c5a16e5a22bd
+timeCreated: 1519565922
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walk_Idle_Teleport_fixed_0
+    21300002: Walk_Idle_Teleport_fixed_1
+    21300004: Walk_Idle_Teleport_fixed_2
+    21300006: Walk_Idle_Teleport_fixed_3
+    21300008: Walk_Idle_Teleport_fixed_4
+    21300010: Walk_Idle_Teleport_fixed_5
+    21300012: Walk_Idle_Teleport_fixed_6
+    21300014: Walk_Idle_Teleport_fixed_7
+    21300016: Walk_Idle_Teleport_fixed_8
+    21300018: Walk_Idle_Teleport_fixed_9
+    21300020: Walk_Idle_Teleport_fixed_10
+    21300022: Walk_Idle_Teleport_fixed_11
+    21300024: Walk_Idle_Teleport_fixed_12
+    21300026: Walk_Idle_Teleport_fixed_13
+    21300028: Walk_Idle_Teleport_fixed_14
+    21300030: Walk_Idle_Teleport_fixed_15
+    21300032: Walk_Idle_Teleport_fixed_16
+    21300034: Walk_Idle_Teleport_fixed_17
+    21300036: Walk_Idle_Teleport_fixed_18
+    21300038: Walk_Idle_Teleport_fixed_19
+    21300040: Walk_Idle_Teleport_fixed_20
+    21300042: Walk_Idle_Teleport_fixed_21
+    21300044: Walk_Idle_Teleport_fixed_22
+    21300046: Walk_Idle_Teleport_fixed_23
+    21300048: Walk_Idle_Teleport_fixed_24
+    21300050: Walk_Idle_Teleport_fixed_25
+    21300052: Walk_Idle_Teleport_fixed_26
+    21300054: Walk_Idle_Teleport_fixed_27
+    21300056: Walk_Idle_Teleport_fixed_28
+    21300058: Walk_Idle_Teleport_fixed_29
+    21300060: Walk_Idle_Teleport_fixed_30
+    21300062: Walk_Idle_Teleport_fixed_31
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 581
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 581
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 581
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 581
+        width: 68
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_4
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 581
+        width: 68
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_5
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 581
+        width: 68
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_6
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 581
+        width: 68
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_7
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 581
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 581
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 312
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 312
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 72
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_12
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 340
+        width: 72
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_13
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 364
+        width: 72
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_14
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 384
+        width: 72
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 408
+        width: 72
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 428
+        width: 72
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 452
+        width: 72
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_18
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 472
+        width: 72
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_19
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 496
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_20
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 516
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_21
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 540
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_22
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 556
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_23
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 560
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_24
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 500
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 28
+        width: 76
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_26
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 28
+        width: 124
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_27
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 24
+        width: 100
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_28
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 24
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 24
+        width: 104
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_30
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 24
+        width: 148
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_fixed_31
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 28
+        width: 76
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
