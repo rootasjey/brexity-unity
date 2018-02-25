@@ -18,6 +18,9 @@ public class TraderFalling : MonoBehaviour {
 
         _animator.SetBool("Ground_Touch", true);
 
+        var cameraTracking = Camera.main.GetComponent<CameraTracking>();
+        cameraTracking.Shake(.1f, .3f);
+
         StartCoroutine(PlayReactionVoice());
 
         StartCoroutine(KillTrader());

@@ -97,7 +97,7 @@ Transform:
   m_GameObject: {fileID: 1631329963313486}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 15, z: 0}
-  m_LocalScale: {x: 7.1607556, y: 7.2851896, z: 8.26289}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4671669397448272}
   - {fileID: 4244327451240744}
@@ -337,9 +337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2791932964ab242ae916b1a698553f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ground:
-    serializedVersion: 2
-    m_Bits: 1024
   reactionVoices:
   - {fileID: 8300000, guid: a4a406f1ce9ab4d45ad6cf9ecd2cf71d, type: 3}
   - {fileID: 8300000, guid: 0f61aa20c1beeda4d8e51aff337f64c9, type: 3}
