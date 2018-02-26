@@ -24,7 +24,7 @@ public class CameraTracking : MonoBehaviour {
 
         var cameraSize = (Camera.main.orthographicSize);
 
-        _minCameraPos = new Vector3(leftLimitBorder.x + cameraSize * 1.1f, bottomLimitBorder.y + cameraSize);
+        _minCameraPos = new Vector3(leftLimitBorder.x, bottomLimitBorder.y + cameraSize);
         _maxCameraPos = new Vector3(rightLimitBorder.x - cameraSize, topLimitBorder.y - cameraSize);
     }
 

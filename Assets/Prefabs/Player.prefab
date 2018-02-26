@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114949712139065104}
   - component: {fileID: 95100406634524980}
   - component: {fileID: 114200869011986940}
+  - component: {fileID: 114904489684028326}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -158,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 100
+  stealth: 0
 --- !u!114 &114207371334893162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,6 +178,20 @@ MonoBehaviour:
     m_Bits: 4294966783
   anim: {fileID: 95100406634524980}
   onLadder: 0
+--- !u!114 &114904489684028326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260656822724644}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48db0f8c19dd17440a5491bc7c55d81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
+  timeBeforeTrigger: 0
+  trader: {fileID: 1631329963313486, guid: d33df24242a102a45ae018d1d4057fd3, type: 2}
 --- !u!114 &114949712139065104
 MonoBehaviour:
   m_ObjectHideFlags: 1
