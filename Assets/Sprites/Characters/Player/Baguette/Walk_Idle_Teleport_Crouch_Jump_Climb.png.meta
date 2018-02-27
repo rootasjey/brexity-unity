@@ -1,45 +1,54 @@
 fileFormatVersion: 2
-guid: 1ae8138a0d7b90a46bc3743c398222dd
-timeCreated: 1519683095
+guid: c02e70675053e7d43b3990db432ddb55
+timeCreated: 1519768619
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Walk_Idle_Teleport_Crouch_02_0
-    21300002: Walk_Idle_Teleport_Crouch_02_1
-    21300004: Walk_Idle_Teleport_Crouch_02_2
-    21300006: Walk_Idle_Teleport_Crouch_02_3
-    21300008: Walk_Idle_Teleport_Crouch_02_4
-    21300010: Walk_Idle_Teleport_Crouch_02_5
-    21300012: Walk_Idle_Teleport_Crouch_02_6
-    21300014: Walk_Idle_Teleport_Crouch_02_7
-    21300016: Walk_Idle_Teleport_Crouch_02_8
-    21300018: Walk_Idle_Teleport_Crouch_02_9
-    21300020: Walk_Idle_Teleport_Crouch_02_10
-    21300022: Walk_Idle_Teleport_Crouch_02_11
-    21300024: Walk_Idle_Teleport_Crouch_02_12
-    21300026: Walk_Idle_Teleport_Crouch_02_13
-    21300028: Walk_Idle_Teleport_Crouch_02_14
-    21300030: Walk_Idle_Teleport_Crouch_02_15
-    21300032: Walk_Idle_Teleport_Crouch_02_16
-    21300034: Walk_Idle_Teleport_Crouch_02_17
-    21300036: Walk_Idle_Teleport_Crouch_02_18
-    21300038: Walk_Idle_Teleport_Crouch_02_19
-    21300040: Walk_Idle_Teleport_Crouch_02_20
-    21300042: Walk_Idle_Teleport_Crouch_02_21
-    21300044: Walk_Idle_Teleport_Crouch_02_22
-    21300046: Walk_Idle_Teleport_Crouch_02_23
-    21300048: Walk_Idle_Teleport_Crouch_02_24
-    21300050: Walk_Idle_Teleport_Crouch_02_25
-    21300052: Walk_Idle_Teleport_Crouch_02_26
-    21300054: Walk_Idle_Teleport_Crouch_02_27
-    21300056: Walk_Idle_Teleport_Crouch_02_28
-    21300058: Walk_Idle_Teleport_Crouch_02_29
-    21300060: Walk_Idle_Teleport_Crouch_02_30
-    21300062: Walk_Idle_Teleport_Crouch_02_31
-    21300064: Walk_Idle_Teleport_Crouch_02_32
-    21300066: Walk_Idle_Teleport_Crouch_02_33
-    21300068: Walk_Idle_Teleport_Crouch_02_34
-    21300070: Walk_Idle_Teleport_Crouch_02_35
+    21300000: Walk_Idle_Teleport_Crouch_Jump_Climb_0
+    21300002: Walk_Idle_Teleport_Crouch_Jump_Climb_1
+    21300004: Walk_Idle_Teleport_Crouch_Jump_Climb_2
+    21300006: Walk_Idle_Teleport_Crouch_Jump_Climb_3
+    21300008: Walk_Idle_Teleport_Crouch_Jump_Climb_4
+    21300010: Walk_Idle_Teleport_Crouch_Jump_Climb_5
+    21300012: Walk_Idle_Teleport_Crouch_Jump_Climb_6
+    21300014: Walk_Idle_Teleport_Crouch_Jump_Climb_7
+    21300016: Walk_Idle_Teleport_Crouch_Jump_Climb_8
+    21300018: Walk_Idle_Teleport_Crouch_Jump_Climb_9
+    21300020: Walk_Idle_Teleport_Crouch_Jump_Climb_10
+    21300022: Walk_Idle_Teleport_Crouch_Jump_Climb_11
+    21300024: Walk_Idle_Teleport_Crouch_Jump_Climb_12
+    21300026: Walk_Idle_Teleport_Crouch_Jump_Climb_13
+    21300028: Walk_Idle_Teleport_Crouch_Jump_Climb_14
+    21300030: Walk_Idle_Teleport_Crouch_Jump_Climb_15
+    21300032: Walk_Idle_Teleport_Crouch_Jump_Climb_16
+    21300034: Walk_Idle_Teleport_Crouch_Jump_Climb_17
+    21300036: Walk_Idle_Teleport_Crouch_Jump_Climb_18
+    21300038: Walk_Idle_Teleport_Crouch_Jump_Climb_19
+    21300040: Walk_Idle_Teleport_Crouch_Jump_Climb_20
+    21300042: Walk_Idle_Teleport_Crouch_Jump_Climb_21
+    21300044: Walk_Idle_Teleport_Crouch_Jump_Climb_22
+    21300046: Walk_Idle_Teleport_Crouch_Jump_Climb_23
+    21300048: Walk_Idle_Teleport_Crouch_Jump_Climb_24
+    21300050: Walk_Idle_Teleport_Crouch_Jump_Climb_25
+    21300052: Walk_Idle_Teleport_Crouch_Jump_Climb_26
+    21300054: Walk_Idle_Teleport_Crouch_Jump_Climb_27
+    21300056: Walk_Idle_Teleport_Crouch_Jump_Climb_28
+    21300058: Walk_Idle_Teleport_Crouch_Jump_Climb_29
+    21300060: Walk_Idle_Teleport_Crouch_Jump_Climb_30
+    21300062: Walk_Idle_Teleport_Crouch_Jump_Climb_31
+    21300064: Walk_Idle_Teleport_Crouch_Jump_Climb_32
+    21300066: Walk_Idle_Teleport_Crouch_Jump_Climb_33
+    21300068: Walk_Idle_Teleport_Crouch_Jump_Climb_34
+    21300070: Walk_Idle_Teleport_Crouch_Jump_Climb_35
+    21300072: Walk_Idle_Teleport_Crouch_Jump_Climb_36
+    21300074: Walk_Idle_Teleport_Crouch_Jump_Climb_37
+    21300076: Walk_Idle_Teleport_Crouch_Jump_Climb_38
+    21300078: Walk_Idle_Teleport_Crouch_Jump_Climb_39
+    21300080: Walk_Idle_Teleport_Crouch_Jump_Climb_40
+    21300082: Walk_Idle_Teleport_Crouch_Jump_Climb_41
+    21300084: Walk_Idle_Teleport_Crouch_Jump_Climb_42
+    21300086: Walk_Idle_Teleport_Crouch_Jump_Climb_43
+    21300088: Walk_Idle_Teleport_Crouch_Jump_Climb_44
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -116,505 +125,631 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_0
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_0
       rect:
         serializedVersion: 2
         x: 16
-        y: 863
+        y: 1439
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_1
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_1
       rect:
         serializedVersion: 2
         x: 100
-        y: 863
+        y: 1439
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_2
       rect:
         serializedVersion: 2
         x: 184
-        y: 863
+        y: 1439
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_3
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_3
       rect:
         serializedVersion: 2
         x: 268
-        y: 863
+        y: 1439
         width: 68
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_4
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_4
       rect:
         serializedVersion: 2
         x: 348
-        y: 863
+        y: 1439
         width: 68
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_5
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_5
       rect:
         serializedVersion: 2
         x: 428
-        y: 863
+        y: 1439
         width: 68
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_6
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_6
       rect:
         serializedVersion: 2
         x: 508
-        y: 863
+        y: 1439
         width: 68
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_7
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_7
       rect:
         serializedVersion: 2
         x: 584
-        y: 863
+        y: 1439
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_8
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_8
       rect:
         serializedVersion: 2
         x: 668
-        y: 863
+        y: 1439
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_9
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_9
       rect:
         serializedVersion: 2
         x: 16
-        y: 594
+        y: 1170
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_10
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_10
       rect:
         serializedVersion: 2
         x: 88
-        y: 594
+        y: 1170
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_11
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_11
       rect:
         serializedVersion: 2
         x: 160
-        y: 602
+        y: 1170
         width: 72
-        height: 256
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_12
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_12
       rect:
         serializedVersion: 2
         x: 232
-        y: 622
+        y: 1170
         width: 72
-        height: 236
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_13
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_13
       rect:
         serializedVersion: 2
         x: 304
-        y: 646
+        y: 1170
         width: 72
-        height: 212
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_14
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_14
       rect:
         serializedVersion: 2
         x: 376
-        y: 666
+        y: 1170
         width: 72
-        height: 192
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_15
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_15
       rect:
         serializedVersion: 2
         x: 448
-        y: 690
+        y: 1170
         width: 72
-        height: 168
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_16
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_16
       rect:
         serializedVersion: 2
         x: 520
-        y: 710
+        y: 1170
         width: 72
-        height: 148
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_17
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_17
       rect:
         serializedVersion: 2
         x: 592
-        y: 734
+        y: 1170
         width: 72
-        height: 124
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_18
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_18
       rect:
         serializedVersion: 2
         x: 664
-        y: 754
+        y: 1170
         width: 72
-        height: 104
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_19
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_19
       rect:
         serializedVersion: 2
         x: 756
-        y: 778
+        y: 1170
         width: 52
-        height: 80
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_20
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_20
       rect:
         serializedVersion: 2
         x: 840
-        y: 798
+        y: 1170
         width: 40
-        height: 60
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_21
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_21
       rect:
         serializedVersion: 2
         x: 912
-        y: 822
+        y: 1170
         width: 20
-        height: 36
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_22
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_22
       rect:
         serializedVersion: 2
-        x: 936
-        y: 838
+        x: 937
+        y: 1170
         width: 16
-        height: 16
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_23
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_23
       rect:
         serializedVersion: 2
         x: 992
-        y: 842
+        y: 1170
         width: 16
-        height: 16
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_24
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_24
       rect:
         serializedVersion: 2
         x: 736
-        y: 782
+        y: 1170
         width: 16
-        height: 32
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_25
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_25
       rect:
         serializedVersion: 2
-        x: 17
-        y: 310
+        x: 15
+        y: 893
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_26
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 897
         width: 76
         height: 260
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_26
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_27
       rect:
         serializedVersion: 2
-        x: 108
-        y: 306
+        x: 203
+        y: 893
         width: 148
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_27
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_28
       rect:
         serializedVersion: 2
-        x: 261
-        y: 306
+        x: 356
+        y: 893
         width: 100
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_28
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_29
       rect:
         serializedVersion: 2
-        x: 386
-        y: 306
+        x: 481
+        y: 893
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_29
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_30
       rect:
         serializedVersion: 2
-        x: 475
-        y: 306
+        x: 570
+        y: 893
         width: 104
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_30
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_31
       rect:
         serializedVersion: 2
-        x: 589
-        y: 306
+        x: 684
+        y: 893
         width: 148
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_31
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_32
       rect:
         serializedVersion: 2
-        x: 750
-        y: 310
+        x: 845
+        y: 897
         width: 76
         height: 260
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_32
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_33
       rect:
         serializedVersion: 2
         x: 24
-        y: 37
+        y: 613
         width: 72
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_33
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_34
       rect:
         serializedVersion: 2
         x: 100
-        y: 37
+        y: 613
         width: 84
-        height: 224
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_34
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_35
       rect:
         serializedVersion: 2
         x: 192
-        y: 37
+        y: 613
         width: 76
-        height: 180
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Walk_Idle_Teleport_Crouch_02_35
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_36
       rect:
         serializedVersion: 2
         x: 276
-        y: 37
+        y: 613
         width: 84
-        height: 180
+        height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_37
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 305
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_38
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 305
+        width: 136
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 305
+        width: 192
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_40
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 20
+        width: 72
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_41
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 24
+        width: 76
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_42
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 20
+        width: 92
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 20
+        width: 92
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_Idle_Teleport_Crouch_Jump_Climb_44
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 20
+        width: 104
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

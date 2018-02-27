@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerColliderControllerScript : MonoBehaviour {
 
-    public BoxCollider2D stand;
-    public BoxCollider2D crouch;
-    public CircleCollider2D circle;
+    public CapsuleCollider2D stand;
+    public CapsuleCollider2D crouch;
 
     private PlayerCrouchControllerScript playerCrouch;
     private bool isCrouched = false;
@@ -16,7 +15,6 @@ public class PlayerColliderControllerScript : MonoBehaviour {
         playerCrouch = GetComponent<PlayerCrouchControllerScript>();
         stand.enabled = true;
         crouch.enabled = false;
-        circle.enabled = true;
     }
 
     void FixedUpdate () {
@@ -27,13 +25,11 @@ public class PlayerColliderControllerScript : MonoBehaviour {
         {
             stand.enabled = false;
             crouch.enabled = true;
-            circle.enabled = true;
         }
         else
         {
             stand.enabled = true;
             crouch.enabled = false;
-            circle.enabled = true;
         }
     }
 }
