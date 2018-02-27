@@ -4,6 +4,8 @@ public class Stage2Orchestrator : MonoBehaviour {
 
     private GameObject _pauseMenu;
     private GameObject _settingsMenu;
+    private GameObject _inventory;
+
     private AudioSource _backgroundMusic;
     private PlayerStats _playerStats;
 
@@ -37,6 +39,10 @@ public class Stage2Orchestrator : MonoBehaviour {
                 _backgroundMusic.volume = 0;
             }
         }
+
+        if (!_pauseMenu.activeSelf && Input.GetKeyDown(KeyCode.I)) {
+            _inventory.SetActive(!_inventory.activeSelf);
+        }
     }
 
     private void InitializeComponents() {
@@ -53,6 +59,9 @@ public class Stage2Orchestrator : MonoBehaviour {
 
         _deathScreen = GameObject.Find("DeathScreen");
         _deathScreen.SetActive(false);
+
+        _inventory = GameObject.Find("Inventory");
+        _inventory.SetActive(false);
 
         GameObject.Find("GamePlay").SetActive(false);
         GameObject.Find("Audio").SetActive(false);

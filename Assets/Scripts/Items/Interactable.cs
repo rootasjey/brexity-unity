@@ -4,7 +4,11 @@ using UnityEngine.UI;
 public class Interactable : MonoBehaviour {
     public Font customFont;
 
+    public string key;
+    public float yOffset;
+
     private GameObject _hintInteractable;
+
     private Text _textComponent;
     private bool _isPlayerInRange;
 
@@ -64,7 +68,6 @@ public class Interactable : MonoBehaviour {
         if (_hintInteractable == null) {
             _hintInteractable = new GameObject("HintInteractable");
             _hintInteractable.transform.parent = gameObject.transform;
-            _hintInteractable.transform.localPosition = new Vector3(0, 2.5f, 0);
 
             // image
             var imageGameObject = new GameObject("TextHintBackground");
@@ -94,7 +97,10 @@ public class Interactable : MonoBehaviour {
             _textComponent.transform.localScale = new Vector3(.02f, .02f, .02f);
         }
 
-        _textComponent.text = "E"; // update w/ player key binding
+        var verticalOffset = yOffset + 2.5f;
+        _hintInteractable.transform.localPosition = new Vector3(0, verticalOffset, 0);
+
+        _textComponent.text = string.IsNullOrEmpty(key) ? "E": key; // update w/ player key binding
         _hintInteractable.SetActive(true);
     }
 

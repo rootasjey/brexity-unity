@@ -2,46 +2,57 @@
 
 public class CameraTracking : MonoBehaviour {
     public GameObject player;
-    private Vector3 _offset;
 
-    public float offsetX = 150;
+    public float smoothTimeX;
+    public float smoothTimeY;
+    public float shakeTimer;
+    public float shakeAmount;
 
-    public double LeftBorder = 0;
-    public double RightBorder = 0;
+    private Vector3 _minCameraPos;
+    private Vector3 _maxCameraPos;
 
-    private Rigidbody2D _playerRB;
+    public Vector2 velocity;
 
     // Use this for initialization
     void Start () {
-        _offset = this.transform.position - player.transform.position;
-        _playerRB = player.GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player");
+
+        var leftLimitBorder = GameObject.Find("LeftLimitBorder").transform.position;
+        var rightLimitBorder = GameObject.Find("RightLimitBorder").transform.position;
+        var topLimitBorder = GameObject.Find("TopLimitBorder").transform.position;
+        var bottomLimitBorder = GameObject.Find("BottomLimitBorder").transform.position;
+
+        var cameraSize = (Camera.main.orthographicSize);
+
+        _minCameraPos = new Vector3(leftLimitBorder.x, bottomLimitBorder.y + cameraSize);
+        _maxCameraPos = new Vector3(rightLimitBorder.x - cameraSize, topLimitBorder.y - cameraSize);
     }
-	
-    // Called after every game object has been processed
-    private void LateUpdate() {
-        // Check world borders
-        var playerPosition = player.transform.position;
 
-        if (playerPosition.x <= LeftBorder || playerPosition.x >= RightBorder) {
-            return;
+    private void FixedUpdate() {
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
+
+        transform.position = new Vector3(
+                Mathf.Clamp(posX, _minCameraPos.x, _maxCameraPos.x),
+                Mathf.Clamp(posY, _minCameraPos.y, _maxCameraPos.y),
+                Mathf.Clamp(transform.position.z, transform.position.z, transform.position.z));
+    }
+
+    private void Update() {
+        if (shakeTimer >= 0) {
+            Vector2 shakePos = Random.insideUnitCircle * shakeAmount;
+
+            transform.position = new Vector3(
+                transform.position.x + shakePos.x, 
+                transform.position.y + shakePos.y, 
+                transform.position.z);
+
+            shakeTimer -= Time.deltaTime;
         }
+    }
 
-        // backup
-        this.transform.position = player.transform.position + _offset;
-
-        //Vector3 velocity = Vector3.zero;
-
-        //float time = 7f / Mathf.Abs(_playerRB.velocity.x + 1);
-
-        //if (_playerRB.velocity.x >= 0 && playerPosition.x - this.transform.position.x >= 3) {
-        //    var newPosition = this.transform.position + new Vector3(offsetX, 0);
-
-        //    this.transform.position = Vector3.SmoothDamp(this.transform.position, newPosition, ref velocity, time);
-
-        //} else if (_playerRB.velocity.x < 0 && playerPosition.x - this.transform.position.x <= 1) {
-        //    var newPosition = this.transform.position - new Vector3(offsetX, 0);
-
-        //    this.transform.position = Vector3.SmoothDamp(this.transform.position, newPosition, ref velocity, time);
-        //}
+    public void Shake(float shakePower, float shakeDuration) {
+        shakeAmount = shakePower;
+        shakeTimer = shakeDuration;
     }
 }
