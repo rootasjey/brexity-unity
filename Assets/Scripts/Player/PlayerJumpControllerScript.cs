@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerJumpControllerScript : MonoBehaviour
 {
 
-    [Range(1, 100)]
+    [Range(0, 100)]
     public float jumpForce;
 
     public Transform groundCheck;
