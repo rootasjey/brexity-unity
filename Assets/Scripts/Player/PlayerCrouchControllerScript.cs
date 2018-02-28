@@ -26,10 +26,12 @@ public class PlayerCrouchControllerScript : MonoBehaviour {
     {
         isGrounded = playerJump.getGrounded();
         isGroundedUp = Physics2D.OverlapCircle(groundCheckUp.position, groundRadius, groundLayer);
-
+        Debug.Log("Get Button => "+ Input.GetButton("Crouch"));
+        Debug.Log("GroundedUp => "+!isGroundedUp);
+        Debug.Log("isGrounded => " + isGrounded);
+        Debug.Log("velo => "+GetComponent<Rigidbody2D>().velocity.y);
         if (Input.GetButtonDown("Crouch") && !isGroundedUp  && isGrounded && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
-            //Debug.Log("Crouch ==>"+ Input.GetButtonDown("Crouch")+" || IsGroundedUp ==> "+ isGroundedUp+ " || isGrounded ==> "+isGrounded+" || velocity ==>"+GetComponent<Rigidbody2D>().velocity.y);
             isCrouched = !isCrouched;
             playerRun.canRun = !isCrouched;
             anim.SetBool("Crouched", isCrouched);

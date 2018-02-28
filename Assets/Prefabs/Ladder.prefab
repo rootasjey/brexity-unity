@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4471409483618802}
   - component: {fileID: 212431582366886230}
   - component: {fileID: 61379335951371958}
-  - component: {fileID: 114486074157530366}
-  m_Layer: 10
+  - component: {fileID: 114585441732280856}
+  m_Layer: 9
   m_Name: Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619687154560006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.8, y: -2.86, z: 0}
-  m_LocalScale: {x: 7.043409, y: 5.5518875, z: 1}
+  m_LocalPosition: {x: 216.327, y: 5.091, z: 0}
+  m_LocalScale: {x: 2.8154042, y: 41.805397, z: 0.9099999}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18995664, y: 0.20313916}
   m_EdgeRadius: 0
---- !u!114 &114486074157530366
+--- !u!114 &114585441732280856
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -80,7 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ladderLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 256
+  maxClimbSpeed: 2
 --- !u!212 &212431582366886230
 SpriteRenderer:
   m_ObjectHideFlags: 1

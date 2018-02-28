@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerJumpControllerScript : MonoBehaviour
 {
 
-    [Range(0, 100)]
     public float jumpForce;
 
     public Transform groundCheck;
@@ -30,7 +29,6 @@ public class PlayerJumpControllerScript : MonoBehaviour
         anim.SetBool("Grounded", isGrounded);
         anim.SetFloat("VerticalSpeed", GetComponent<Rigidbody2D>().velocity.y);
         playerRun.freezeMovement = !isGrounded && !onLadder;
-        //Debug.Log("isGrounded => "+isGrounded+" || onLadder => "+onLadder);
     }
 
     // Update is called once per frame
@@ -38,7 +36,6 @@ public class PlayerJumpControllerScript : MonoBehaviour
     {
         if (Input.GetButton("Jump") && isGrounded && GetComponent<Rigidbody2D>().velocity.y == 0)
         {
-            //Debug.Log("Player Jump with a force of "+ jumpForce + " !");
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             anim.SetBool("Grounded", false);
         }

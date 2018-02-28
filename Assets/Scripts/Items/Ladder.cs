@@ -7,7 +7,7 @@ using UnityEngine;
  * Layers documentation : https://docs.unity3d.com/Manual/Layers.html
  * Example: https://answers.unity.com/questions/50279/check-if-layer-is-in-layermask.html
  * */
-public class PlayerClimbControllerScript : MonoBehaviour {
+public class Ladder : MonoBehaviour {
 
     public LayerMask ladderLayer;
     public float maxClimbSpeed = 1f;

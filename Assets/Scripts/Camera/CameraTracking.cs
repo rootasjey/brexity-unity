@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class CameraTracking : MonoBehaviour {
-    public GameObject player;
+    private GameObject player;
 
     public float smoothTimeX;
     public float smoothTimeY;
@@ -17,18 +17,23 @@ public class CameraTracking : MonoBehaviour {
     void Start () {
         player = GameObject.Find("Player");
 
-        var leftLimitBorder = GameObject.Find("LeftLimitBorder").transform.position;
-        var rightLimitBorder = GameObject.Find("RightLimitBorder").transform.position;
-        var topLimitBorder = GameObject.Find("TopLimitBorder").transform.position;
-        var bottomLimitBorder = GameObject.Find("BottomLimitBorder").transform.position;
+        //var leftLimitBorder = GameObject.Find("LeftLimitBorder").transform.position;
+        //var rightLimitBorder = GameObject.Find("RightLimitBorder").transform.position;
+        //var topLimitBorder = GameObject.Find("TopLimitBorder").transform.position;
+        //var bottomLimitBorder = GameObject.Find("BottomLimitBorder").transform.position;
 
         var cameraSize = (Camera.main.orthographicSize);
 
-        _minCameraPos = new Vector3(leftLimitBorder.x, bottomLimitBorder.y + cameraSize);
-        _maxCameraPos = new Vector3(rightLimitBorder.x - cameraSize, topLimitBorder.y - cameraSize);
+        _minCameraPos = new Vector3(/*leftLimitBorder.x*/0, /*bottomLimitBorder.y + cameraSize*/0);
+        _maxCameraPos = new Vector3(/*rightLimitBorder.x - cameraSize*/0, /*topLimitBorder.y - cameraSize*/0);
     }
 
     private void FixedUpdate() {
+        if (player == null)
+        {
+            player = GameObject.Find("Player");
+            return;
+        }
         float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
         float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
 

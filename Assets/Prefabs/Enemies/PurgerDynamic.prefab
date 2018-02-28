@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1718493130880422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 78, y: -2.6, z: 1}
+  m_LocalPosition: {x: 77.21, y: 0.79, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,37 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1718493130880422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fc2e9cea70af541a5fc258cb26a896, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 4294951369
-  purgerWall:
-    serializedVersion: 2
-    m_Bits: 4096
-  distanceToSeePlayer: 5
-  deadlySight: 2
-  distanceToSeeObstacle: 2
-  height: 3
-  detectionTimer: 5
-  envDetectionTimer: 0
-  maxDetectionTimer: 5
-  maxEnvDetectionTimer: 2
-  minimumStealth: 50
-  purgerDirection: {x: 1, y: 0}
---- !u!114 &114571383400783508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1718493130880422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41a6589e2d2bfda46bea24a3613bb06c, type: 3}
+  m_Script: {fileID: 11500000, guid: df114e7f260ec5d40ae84dc01f220f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 2
@@ -139,6 +109,36 @@ MonoBehaviour:
   playerLocation: {x: 0, y: 0}
   rangeFollow: 2
   direction: 1
+--- !u!114 &114571383400783508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1718493130880422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77de5e6680d140947836c34437fa936c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 9216
+  purgerWall:
+    serializedVersion: 2
+    m_Bits: 4096
+  distanceToSeePlayer: 5
+  deadlySight: 2
+  distanceToSeeObstacle: 2
+  height: 3
+  detectionTimer: 0
+  envDetectionTimer: 0
+  maxDetectionTimer: 5
+  maxEnvDetectionTimer: 2
+  minimumStealth: 50
+  purgerDirection: {x: 1, y: 0}
 --- !u!212 &212503188545976688
 SpriteRenderer:
   m_ObjectHideFlags: 1
