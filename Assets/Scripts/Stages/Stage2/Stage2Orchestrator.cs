@@ -120,7 +120,7 @@ public class Stage2Orchestrator : MonoBehaviour {
                 //        rect.position.y + rect.sizeDelta.y
                 //        );
                 //}
-                _maxScreenSpaceLimit = new Vector3(229, 12);
+                _maxScreenSpaceLimit = new Vector3(229, 5);
             }
             return _maxScreenSpaceLimit; }
     }

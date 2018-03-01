@@ -70,6 +70,7 @@ public class Interactable : MonoBehaviour {
         if (_hintInteractable == null) {
             _hintInteractable = new GameObject("HintInteractable");
             _hintInteractable.transform.parent = gameObject.transform;
+            _hintInteractable.transform.localScale = new Vector3(.6f, .6f, .6f);
 
             // image
             var spriteGameObject = new GameObject("TextHintBackground");
