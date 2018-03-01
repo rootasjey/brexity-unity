@@ -2661,7 +2661,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 99.59
+  m_PlaneDistance: 96.46
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2669,7 +2669,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!223 &223406522873314692
 Canvas:
@@ -2689,7 +2689,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!223 &223488361566974188
 Canvas:
@@ -2729,7 +2729,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 15
   m_TargetDisplay: 0
 --- !u!223 &223892469130281954
 Canvas:

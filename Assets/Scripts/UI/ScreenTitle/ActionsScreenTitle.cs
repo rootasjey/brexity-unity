@@ -22,6 +22,6 @@ public class ActionsScreenTitle : MonoBehaviour {
     }
 
     public void ExitGame() {
-        ExitGame();
+        Application.Quit();
     }
 }

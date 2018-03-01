@@ -23,11 +23,11 @@ public class ActionsPause : MonoBehaviour {
     }
 
     public void GoToSettings() {
-        _orchestrator.GetSettingsMenu().SetActive(true);
-        _orchestrator.GetPauseMenu().SetActive(false);
+        _orchestrator.SettingsMenu.SetActive(true);
+        _orchestrator.PauseMenu.SetActive(false);
     }
 
     public void ExitGame() {
-        ExitGame();
+        Application.Quit();
     }
 }

@@ -68,6 +68,7 @@ MonoBehaviour:
   customFont: {fileID: 12800000, guid: 382fc2f50e9c36b449fd4cd25247256f, type: 3}
   key: 
   yOffset: 0
+  hintBackground: {fileID: 21300000, guid: a9f2cc2f77f71a241a15c8eb81a8d07f, type: 3}
 --- !u!212 &212920308133216776
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -27,7 +27,7 @@ public class ActionsPauseSettings : MonoBehaviour {
     }
 
     private void Update() {
-        if (!_orchestrator.GetSettingsMenu().activeSelf) return;
+        if (!_orchestrator.SettingsMenu.activeSelf) return;
 
         if (_menuNavigation.GetCursorIndex() == 0) {
             _audioSlider.interactable = true;
@@ -48,8 +48,8 @@ public class ActionsPauseSettings : MonoBehaviour {
     }
 
     public void BackToMainMenu() {
-        _orchestrator.GetSettingsMenu().SetActive(false);
-        _orchestrator.GetPauseMenu().SetActive(true);
+        _orchestrator.SettingsMenu.SetActive(false);
+        _orchestrator.PauseMenu.SetActive(true);
 
         SaveSettings();
     }

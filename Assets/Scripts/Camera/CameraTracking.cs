@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
 public class CameraTracking : MonoBehaviour {
-    private GameObject player;
-
     public float smoothTimeX;
     public float smoothTimeY;
     public float shakeTimer;
@@ -13,29 +11,38 @@ public class CameraTracking : MonoBehaviour {
 
     public Vector2 velocity;
 
+    private Stage2Orchestrator _orchestrator;
+
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("Player");
-
-        //var leftLimitBorder = GameObject.Find("LeftLimitBorder").transform.position;
-        //var rightLimitBorder = GameObject.Find("RightLimitBorder").transform.position;
-        //var topLimitBorder = GameObject.Find("TopLimitBorder").transform.position;
-        //var bottomLimitBorder = GameObject.Find("BottomLimitBorder").transform.position;
-
-        var cameraSize = (Camera.main.orthographicSize);
-
-        _minCameraPos = new Vector3(/*leftLimitBorder.x*/0, /*bottomLimitBorder.y + cameraSize*/0);
-        _maxCameraPos = new Vector3(/*rightLimitBorder.x - cameraSize*/0, /*topLimitBorder.y - cameraSize*/0);
+        _orchestrator = GameObject.Find("Orchestrator")
+                        .GetComponent<Stage2Orchestrator>();
     }
 
     private void FixedUpdate() {
-        if (player == null)
-        {
-            player = GameObject.Find("Player");
+        if (_orchestrator.Player == null || 
+            !_orchestrator.Player.activeSelf) {
+
             return;
         }
-        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
+
+        if (_minCameraPos == Vector3.zero) {
+            //_minCameraPos = new Vector3(-2.7f, 2.9f);
+            _minCameraPos = _orchestrator.MinScreenSpaceLimit;
+        }
+
+        if (_maxCameraPos==Vector3.zero) {
+            _maxCameraPos = _orchestrator.MaxScreenSpaceLimit;
+            //_maxCameraPos = new Vector3(
+            //    _orchestrator.RightLimitBorder.transform.position.x - Camera.main.orthographicSize,
+            //    _orchestrator.TopLimitBorder.transform.position.y - Camera.main.orthographicSize);
+        }
+
+        float posX = Mathf.SmoothDamp(transform.position.x, 
+            _orchestrator.Player.transform.position.x, ref velocity.x, smoothTimeX);
+
+        float posY = Mathf.SmoothDamp(transform.position.y, 
+            _orchestrator.Player.transform.position.y, ref velocity.y, smoothTimeY);
 
         transform.position = new Vector3(
                 Mathf.Clamp(posX, _minCameraPos.x, _maxCameraPos.x),

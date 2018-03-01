@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aac126552cd15e4a8e7b29df89e8efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 300
+  timeLeft: 60
   GamePlay: {fileID: 0}
 --- !u!222 &222149816332732634
 CanvasRenderer:

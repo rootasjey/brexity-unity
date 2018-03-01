@@ -7,10 +7,12 @@ public class Interactable : MonoBehaviour {
     public string key;
     public float yOffset;
 
+    public Sprite hintBackground;
+
     private GameObject _hintInteractable;
 
     private Text _textComponent;
-    private bool _isPlayerInRange;
+    private bool _isPlayerInRange { get; set; }
 
     private float _initialTime = 1f;
     private float _timeLeft;
@@ -23,9 +25,9 @@ public class Interactable : MonoBehaviour {
         AnimateHint();
     }
 
-    private void CheckInteractionInput() {
+    public virtual void CheckInteractionInput() {
         // NOTE: Use Settings.GetInteractionKey()
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (_isPlayerInRange && Input.GetKeyDown(KeyCode.E)) {
             Interact();
         }
     }
@@ -70,16 +72,13 @@ public class Interactable : MonoBehaviour {
             _hintInteractable.transform.parent = gameObject.transform;
 
             // image
-            var imageGameObject = new GameObject("TextHintBackground");
-            imageGameObject.transform.parent = _hintInteractable.transform;
-            imageGameObject.transform.localPosition = Vector3.zero;
+            var spriteGameObject = new GameObject("TextHintBackground");
+            spriteGameObject.transform.parent = _hintInteractable.transform;
+            spriteGameObject.transform.localPosition = Vector3.zero;
 
-            var image = imageGameObject.AddComponent<Image>();
-            image.transform.localScale = new Vector3(.02f, .02f, .02f);
-            image.color = Color.magenta;
-
-            var rect = image.GetComponent<RectTransform>();
-            rect.sizeDelta = new Vector2(55, 55);
+            var spriteRenderer = spriteGameObject.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = hintBackground;
+            spriteRenderer.transform.localScale = new Vector3(2, 2, 2);
 
             // text
             var textGameObject = new GameObject("TextHint");
@@ -89,9 +88,10 @@ public class Interactable : MonoBehaviour {
             _textComponent = textGameObject.gameObject.AddComponent<Text>();
 
             _textComponent.font = customFont;
-            _textComponent.fontSize = 50;
+            _textComponent.fontSize = 30;
             _textComponent.alignment = TextAnchor.MiddleCenter;
-            _textComponent.color = Color.white;
+            _textComponent.color = new Color(186.0f/ 255.0f, 42.0f / 255.0f, 186.0f / 255.0f, 1);
+
             _textComponent.horizontalOverflow = HorizontalWrapMode.Overflow;
             _textComponent.verticalOverflow = VerticalWrapMode.Overflow;
             _textComponent.transform.localScale = new Vector3(.02f, .02f, .02f);

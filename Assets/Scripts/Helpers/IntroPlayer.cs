@@ -93,8 +93,6 @@ public class IntroPlayer : MonoBehaviour {
             yield return null;
         }
 
-        //Debug.Log("Done Playing Video");
-
         StopIntro();
     }
 

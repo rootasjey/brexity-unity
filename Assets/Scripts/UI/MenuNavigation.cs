@@ -9,7 +9,7 @@ public class MenuNavigation : MonoBehaviour {
     private List<Button> _buttonsList;
 
     private int _buttonsCount = 0;
-    private int _cursorIndex = -1;
+    private int _cursorIndex = 0;
 
     private Color _initialColor;
 
