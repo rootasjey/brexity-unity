@@ -11,12 +11,9 @@ public class Stage2Quest : MonoBehaviour {
     private float _animationDurationLeft;
     private float _angleStep = 0.1f;
 
-    private RectTransform _timerRect;
-
     // Use this for initialization
     void Start () {
         _orchestrator = GameObject.Find("Orchestrator").GetComponent<Stage2Orchestrator>();
-        _timerRect = _orchestrator.Timer.GetComponent<RectTransform>();
         _animationDurationLeft = _animationDuration;
     }
 	
@@ -37,10 +34,13 @@ public class Stage2Quest : MonoBehaviour {
             _angleStep = -_angleStep;
         }
 
-        _timerRect.eulerAngles = new Vector3(
-                _timerRect.eulerAngles.x,
-                _timerRect.eulerAngles.y,
-                _timerRect.eulerAngles.z + _angleStep);
+        var timerRect = _orchestrator.Timer.GetComponent<RectTransform>();
+
+        timerRect
+            .eulerAngles = new Vector3(
+                timerRect.eulerAngles.x,
+                timerRect.eulerAngles.y,
+                timerRect.eulerAngles.z + _angleStep);
 
         _orchestrator.TimerText.text = ((int)timeLeft).ToString();
     }

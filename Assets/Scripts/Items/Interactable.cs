@@ -84,7 +84,6 @@ public class Interactable : MonoBehaviour {
             // text
             var textGameObject = new GameObject("TextHint");
             textGameObject.transform.parent = _hintInteractable.transform;
-            //textGameObject.transform.localPosition = Vector3.zero;
             textGameObject.transform.localPosition = new Vector3(0, -0.05f, 0);
 
             _textComponent = textGameObject.gameObject.AddComponent<Text>();
