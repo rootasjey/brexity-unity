@@ -3,7 +3,7 @@
 namespace Assets.Scripts.Items {
     public class PlaceTeleporter : Interactable {
         private RectTransform _rectTransform;
-        private float _timeAnimation = 1f;
+        private float _timeAnimation = .5f;
         private float _deltaV = 0.01f;
 
         public GameObject teleporterDestination;
