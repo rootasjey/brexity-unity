@@ -6,10 +6,12 @@ namespace Assets.Scripts.Stages {
         //public Stage2Orchestrator Orchestrator;
         public GameObject UIPrefab;
         public GameObject HUDPrefab;
+        public GameObject QuestPrefab;
 
         private void Awake() {
             if (instance == null) {
                 instance = this;
+
             } else if (instance != this) {
                 Destroy(gameObject);
             }
@@ -32,6 +34,11 @@ namespace Assets.Scripts.Stages {
 
                 var world = GameObject.Find("GamePlay");
                 if (world != null) hud.transform.SetParent(world.transform);
+            }
+
+            if (GameObject.Find("Quest") == null) {
+                var quest = Instantiate(QuestPrefab);
+                quest.name = "Quest";
             }
         }
     }

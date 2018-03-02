@@ -5,6 +5,7 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
     private MenuNavigation _menuNavigation;
     private Slider _audioSlider;
     private AudioSource _backgroundMusic;
+    private AudioSource _ambianceSound { get; set; }
 
     private ScreenTitleOrchestrator _orchestrator;
 
@@ -22,6 +23,9 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
                         .GetComponentInChildren<Slider>();
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
+                            .GetComponent<AudioSource>();
+
+        _ambianceSound = GameObject.Find("AmbianceSound")
                             .GetComponent<AudioSource>();
 
         _audioSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
@@ -57,6 +61,7 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
 
     public void ChangeMasterVolume() {
         _backgroundMusic.volume = _audioSlider.value;
+        _ambianceSound.volume = _audioSlider.value;
     }
 
     private void SaveSettings() {

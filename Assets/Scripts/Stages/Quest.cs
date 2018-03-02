@@ -8,11 +8,15 @@ namespace Assets.Scripts.Stages {
 
         public bool IsSecondary { get; set; }
 
+        public int CurrentStep { get; set; }
+
         public List<Objective> Objectives { get; set; }
 
         public void CompleteNext() {
             var nextQuestIncomplete = Objectives.Find(o => o.IsComplete == false);
-            if (nextQuestIncomplete != null) nextQuestIncomplete.IsComplete = true; 
+            if (nextQuestIncomplete != null) nextQuestIncomplete.IsComplete = true;
+
+            CurrentStep++;
         }
 
         public bool IsComplete() {

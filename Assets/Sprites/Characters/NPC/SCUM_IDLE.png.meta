@@ -1,9 +1,43 @@
 fileFormatVersion: 2
 guid: edf812013cf0f104c9d3f8d1ac452705
-timeCreated: 1519989769
+timeCreated: 1519994800
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SCUM_IDLE_0
+    21300002: SCUM_IDLE_1
+    21300004: SCUM_IDLE_2
+    21300006: SCUM_IDLE_3
+    21300008: SCUM_IDLE_4
+    21300010: SCUM_IDLE_5
+    21300012: SCUM_IDLE_6
+    21300014: SCUM_IDLE_7
+    21300016: SCUM_IDLE_8
+    21300018: SCUM_IDLE_9
+    21300020: SCUM_IDLE_10
+    21300022: SCUM_IDLE_11
+    21300024: SCUM_IDLE_12
+    21300026: SCUM_IDLE_13
+    21300028: SCUM_IDLE_14
+    21300030: SCUM_IDLE_15
+    21300032: SCUM_IDLE_16
+    21300034: SCUM_IDLE_17
+    21300036: SCUM_IDLE_18
+    21300038: SCUM_IDLE_19
+    21300040: SCUM_IDLE_20
+    21300042: SCUM_IDLE_21
+    21300044: SCUM_IDLE_22
+    21300046: SCUM_IDLE_23
+    21300048: SCUM_IDLE_24
+    21300050: SCUM_IDLE_25
+    21300052: SCUM_IDLE_26
+    21300054: SCUM_IDLE_27
+    21300056: SCUM_IDLE_28
+    21300058: SCUM_IDLE_29
+    21300060: SCUM_IDLE_30
+    21300062: SCUM_IDLE_31
+    21300064: SCUM_IDLE_32
+    21300066: SCUM_IDLE_33
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +74,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,9 +100,505 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SCUM_IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 18
+        width: 101
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 18
+        width: 100
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 18
+        width: 94
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 18
+        width: 89
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 18
+        width: 87
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 3503
+        y: 18
+        width: 91
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 18
+        width: 92
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 18
+        width: 99
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 4132
+        y: 18
+        width: 112
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 4281
+        y: 18
+        width: 141
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 4436
+        y: 18
+        width: 139
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 4601
+        y: 260
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 4757
+        y: 282
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 18
+        width: 101
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 4796
+        y: 289
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 18
+        width: 104
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 18
+        width: 101
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 18
+        width: 101
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 18
+        width: 100
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 18
+        width: 100
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 18
+        width: 101
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 18
+        width: 100
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 18
+        width: 101
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 18
+        width: 99
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 18
+        width: 99
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 18
+        width: 104
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 18
+        width: 100
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_27
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 18
+        width: 99
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_28
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 18
+        width: 97
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_29
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 18
+        width: 87
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_30
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 18
+        width: 91
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_31
+      rect:
+        serializedVersion: 2
+        x: 3190
+        y: 18
+        width: 88
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_32
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 18
+        width: 88
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SCUM_IDLE_33
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 18
+        width: 100
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

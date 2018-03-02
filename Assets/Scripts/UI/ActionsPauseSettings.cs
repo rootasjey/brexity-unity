@@ -5,7 +5,8 @@ public class ActionsPauseSettings : MonoBehaviour {
     private Stage2Orchestrator _orchestrator;
     private MenuNavigation _menuNavigation;
     private Slider _audioSlider;
-    private AudioSource _backgroundMusic;
+    private AudioSource _backgroundMusic { get; set; }
+    private AudioSource _ambianceSound { get; set; }
 
     // Use this for initialization
     void Start() {
@@ -21,6 +22,9 @@ public class ActionsPauseSettings : MonoBehaviour {
                         .GetComponentInChildren<Slider>();
 
         _backgroundMusic = GameObject.Find("BackgroundMusic")
+                            .GetComponent<AudioSource>();
+
+        _ambianceSound = GameObject.Find("AmbianceSound")
                             .GetComponent<AudioSource>();
 
         _audioSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
@@ -56,6 +60,7 @@ public class ActionsPauseSettings : MonoBehaviour {
 
     public void ChangeMasterVolume() {
         _backgroundMusic.volume = _audioSlider.value;
+        _ambianceSound.volume = _audioSlider.value;
     }
 
     private void SaveSettings() {

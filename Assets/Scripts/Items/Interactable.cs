@@ -18,7 +18,7 @@ public class Interactable : MonoBehaviour {
     private float _timeLeft;
     private float _deltaY = 0.01f;
     
-    private void Update() {
+    public virtual void Update() {
         if (!_isPlayerInRange) return;
 
         CheckInteractionInput();

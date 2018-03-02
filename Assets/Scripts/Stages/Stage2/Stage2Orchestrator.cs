@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Stage2Orchestrator : MonoBehaviour {
@@ -181,6 +182,19 @@ public class Stage2Orchestrator : MonoBehaviour {
         }
     }
 
+    private Stage2Quest _stageQuest;
+
+    public Stage2Quest StageQuest {
+        get {
+            if (_stageQuest == null) {
+                _stageQuest = GameObject.Find("Quest")
+                                .GetComponent<Stage2Quest>();
+            }
+            return _stageQuest;
+        }
+    }
+
+
 
     private float _lastVolumeValue { get; set; }
 
@@ -218,7 +232,7 @@ public class Stage2Orchestrator : MonoBehaviour {
             Inventory.SetActive(!Inventory.activeSelf);
         }
     }
-
+    
     private void InitializeComponents() {
         PauseMenu.SetActive(false);
         SettingsMenu.SetActive(false);

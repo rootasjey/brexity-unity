@@ -53,3 +53,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIPrefab: {fileID: 1390227430210766, guid: 0aa570078174599429361fb30ea1c467, type: 2}
   HUDPrefab: {fileID: 1748112276879406, guid: 11673e7bf3a49ee4a9c9b03017d3fbab, type: 2}
+  QuestPrefab: {fileID: 1222831964824362, guid: bf72a85a781099b448abf4c35c24d998,
+    type: 2}

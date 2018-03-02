@@ -15,18 +15,21 @@ public class Stage2Quest : MonoBehaviour {
 
     private Quest _quest;
 
+    public Quest Quest { get { return _quest; } }
+
     // Use this for initialization
     void Start () {
-        _orchestrator = GameObject.Find("Orchestrator").GetComponent<Stage2Orchestrator>();
+        _orchestrator = GameObject.Find("Orchestrator")
+            .GetComponent<Stage2Orchestrator>();
+
         _animationDurationLeft = _animationDuration;
 
         InitQuest();
     }
 
     private void InitQuest() {
-        _quest = new Quest();
-
-        _quest.Objectives = new List<Objective> {
+        _quest = new Quest {
+            Objectives = new List<Objective> {
             new Objective() {
                 Name = "Get rid of the tracker"
             },
@@ -50,6 +53,7 @@ public class Stage2Quest : MonoBehaviour {
             new Objective() {
                 Name = "Go watch the video tape at the depository"
             }
+        }
         };
     }
 	
