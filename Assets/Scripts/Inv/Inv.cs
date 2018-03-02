@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,12 +15,13 @@ public class Inv : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	//void Update () {
+	//}
 
     private void InstanciateNewSlots() {
         var slotsContainer = transform.Find("Slots");
+        slotsContainer.position = Vector3.zero;
+        slotsContainer.localPosition = Vector3.zero;
 
         listInvSlots = new List<GameObject>(slots);
 
@@ -28,7 +30,9 @@ public class Inv : MonoBehaviour {
             var invSlot = slot.GetComponent<InvSlot>();
 
             var rect = slot.GetComponent<RectTransform>();
-            rect.position = new Vector3(-5, (i * rect.sizeDelta.y) + 1f);
+            //rect.position = new Vector3(-5, (i * rect.sizeDelta.y) + 1f);
+            rect.position = new Vector3(0, 0, 0);
+            rect.localPosition = new Vector3(6, 6, 0);
 
             listInvSlots.Add(slot);
         }

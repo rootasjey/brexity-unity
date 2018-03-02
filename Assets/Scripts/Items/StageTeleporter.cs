@@ -2,9 +2,10 @@
 
 namespace Assets.Scripts.Items {
     public class StageTeleporter : Interactable {
+        public string stageDestination;
 
         public override void Interact() {
-            SceneManager.LoadScene("Stage2_sewer");
+            SceneManager.LoadScene(stageDestination);
         }
     }
 }

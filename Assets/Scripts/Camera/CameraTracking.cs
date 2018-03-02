@@ -6,8 +6,8 @@ public class CameraTracking : MonoBehaviour {
     public float shakeTimer;
     public float shakeAmount;
 
-    private Vector3 _minCameraPos;
-    private Vector3 _maxCameraPos;
+    public Vector3 minCameraPos;
+    public Vector3 maxCameraPos;
 
     public Vector2 velocity;
 
@@ -20,19 +20,24 @@ public class CameraTracking : MonoBehaviour {
     }
 
     private void FixedUpdate() {
+        if (_orchestrator == null) {
+            _orchestrator = GameObject.Find("Orchestrator")
+                        .GetComponent<Stage2Orchestrator>();
+        }
+
         if (_orchestrator.Player == null || 
             !_orchestrator.Player.activeSelf) {
 
             return;
         }
 
-        if (_minCameraPos == Vector3.zero) {
+        if (minCameraPos == Vector3.zero) {
             //_minCameraPos = new Vector3(-2.7f, 2.9f);
-            _minCameraPos = _orchestrator.MinScreenSpaceLimit;
+            minCameraPos = _orchestrator.MinScreenSpaceLimit;
         }
 
-        if (_maxCameraPos==Vector3.zero) {
-            _maxCameraPos = _orchestrator.MaxScreenSpaceLimit;
+        if (maxCameraPos == Vector3.zero) {
+            maxCameraPos = _orchestrator.MaxScreenSpaceLimit;
             //_maxCameraPos = new Vector3(
             //    _orchestrator.RightLimitBorder.transform.position.x - Camera.main.orthographicSize,
             //    _orchestrator.TopLimitBorder.transform.position.y - Camera.main.orthographicSize);
@@ -45,8 +50,8 @@ public class CameraTracking : MonoBehaviour {
             _orchestrator.Player.transform.position.y, ref velocity.y, smoothTimeY);
 
         transform.position = new Vector3(
-                Mathf.Clamp(posX, _minCameraPos.x, _maxCameraPos.x),
-                Mathf.Clamp(posY, _minCameraPos.y, _maxCameraPos.y),
+                Mathf.Clamp(posX, minCameraPos.x, maxCameraPos.x),
+                Mathf.Clamp(posY, minCameraPos.y, maxCameraPos.y),
                 Mathf.Clamp(transform.position.z, transform.position.z, transform.position.z));
     }
 

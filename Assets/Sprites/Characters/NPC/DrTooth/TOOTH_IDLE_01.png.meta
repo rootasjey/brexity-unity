@@ -1,9 +1,40 @@
 fileFormatVersion: 2
 guid: 2e6d5f73b9e67cb4c9775500b400671a
-timeCreated: 1519989758
+timeCreated: 1520023481
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TOOTH_IDLE_01_0
+    21300002: TOOTH_IDLE_01_1
+    21300004: TOOTH_IDLE_01_2
+    21300006: TOOTH_IDLE_01_3
+    21300008: TOOTH_IDLE_01_4
+    21300010: TOOTH_IDLE_01_5
+    21300012: TOOTH_IDLE_01_6
+    21300014: TOOTH_IDLE_01_7
+    21300016: TOOTH_IDLE_01_8
+    21300018: TOOTH_IDLE_01_9
+    21300020: TOOTH_IDLE_01_10
+    21300022: TOOTH_IDLE_01_11
+    21300024: TOOTH_IDLE_01_12
+    21300026: TOOTH_IDLE_01_13
+    21300028: TOOTH_IDLE_01_14
+    21300030: TOOTH_IDLE_01_15
+    21300032: TOOTH_IDLE_01_16
+    21300034: TOOTH_IDLE_01_17
+    21300036: TOOTH_IDLE_01_18
+    21300038: TOOTH_IDLE_01_19
+    21300040: TOOTH_IDLE_01_20
+    21300042: TOOTH_IDLE_01_21
+    21300044: TOOTH_IDLE_01_22
+    21300046: TOOTH_IDLE_01_23
+    21300048: TOOTH_IDLE_01_24
+    21300050: TOOTH_IDLE_01_25
+    21300052: TOOTH_IDLE_01_26
+    21300054: TOOTH_IDLE_01_27
+    21300056: TOOTH_IDLE_01_28
+    21300058: TOOTH_IDLE_01_29
+    21300060: TOOTH_IDLE_01_30
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,9 +97,463 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 19
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_5
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_7
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 19
+        width: 138
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_8
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 19
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_9
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_10
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_11
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 19
+        width: 140
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_12
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_13
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_14
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 19
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_15
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 19
+        width: 137
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_16
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_17
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_18
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_19
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_20
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_21
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 19
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_22
+      rect:
+        serializedVersion: 2
+        x: 3503
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_23
+      rect:
+        serializedVersion: 2
+        x: 3662
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_24
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_25
+      rect:
+        serializedVersion: 2
+        x: 3981
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_26
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_27
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_28
+      rect:
+        serializedVersion: 2
+        x: 4459
+        y: 19
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_29
+      rect:
+        serializedVersion: 2
+        x: 4616
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TOOTH_IDLE_01_30
+      rect:
+        serializedVersion: 2
+        x: 4775
+        y: 19
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

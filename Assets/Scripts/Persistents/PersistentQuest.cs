@@ -7,12 +7,6 @@ public class PersistentQuest : MonoBehaviour {
 
     public GameObject QuestPrefab;
 
-    private Text _timerText;
-
-    public Text TimerText {
-        get { return _timerText; }
-    }
-
     // Use this for initialization
     private void Awake() {
         if (instance == null) {
@@ -24,14 +18,12 @@ public class PersistentQuest : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
 
-        InitGame();
+        //InitGame();
         instance.name = "Quest";
     }
 
-    private void InitGame() {
-        _timerText = transform.Find("QuestTimer")
-                      .gameObject.GetComponent<Text>();
-    }
+    //private void InitGame() {
+    //}
 
     public void ResetTimer() {
         instance.GetComponent<Stage2Quest>().ResetTime();

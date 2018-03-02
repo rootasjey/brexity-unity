@@ -22,6 +22,13 @@ public class IntroPlayer : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        if (videoToPlay == null) {
+            StopIntro();
+            return;
+        }
+
+        PersistentHUD.instance.gameObject.SetActive(false);
+
         InitializeFontStyle();
 
         Application.runInBackground = true;
@@ -109,7 +116,9 @@ public class IntroPlayer : MonoBehaviour {
     private void StopIntro() {
         _isIntroSkipped = true;
 
-        videoPlayer.Stop();
+        if (videoPlayer) videoPlayer.Stop();
+
+        PersistentHUD.instance.gameObject.SetActive(true);
 
         if (ScreenAfterIntro != null) {
             ScreenAfterIntro.SetActive(true);

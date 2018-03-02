@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f06c179f2b1310439037af6eab9b6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slots: 6
+  slots: 1
   invSlotPrefab: {fileID: 1497922595373350, guid: a4e8eab5477b5ea4393412b297da92da,
     type: 2}
 --- !u!114 &114633754386860210
@@ -1295,7 +1295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.79, y: 6.54}
+  m_AnchoredPosition: {x: -0.61, y: 5.91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224688222702527752
