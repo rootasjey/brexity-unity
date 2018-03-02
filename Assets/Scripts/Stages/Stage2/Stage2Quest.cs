@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Stages;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Stage2Quest : MonoBehaviour {
@@ -11,10 +13,42 @@ public class Stage2Quest : MonoBehaviour {
     private float _animationDurationLeft;
     private float _angleStep = 0.1f;
 
+    private Quest _quest;
+
     // Use this for initialization
     void Start () {
         _orchestrator = GameObject.Find("Orchestrator").GetComponent<Stage2Orchestrator>();
         _animationDurationLeft = _animationDuration;
+
+        InitQuest();
+    }
+
+    private void InitQuest() {
+        _quest = new Quest();
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Get rid of the tracker"
+        });
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Find women’s sexy red lingerie"
+        });
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Find a drone and Dr tooth"
+        });
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Find batteries and people like yourself"
+        });
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Find the surgeon"
+        });
+
+        _quest.Objectives.Add(new Objective() {
+            Name = "Go watch the video tape at the depository"
+        });
     }
 	
 	// Update is called once per frame

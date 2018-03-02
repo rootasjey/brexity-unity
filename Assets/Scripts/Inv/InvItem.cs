@@ -1,17 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InvItem : MonoBehaviour {
-    public string name;
-    public string description;
-    public Sprite sprite;
+    public virtual string Name { get; set; }
 
-    public void Use() {
+    public virtual string Description { get; set; }
+
+    public virtual Sprite Sprite { get; set; }
+
+    public virtual bool IsUsable { get; set; }
+
+    public virtual bool IsQuestItem { get; set; }
+
+    public virtual void Use() {
 
     }
 
-    public void Remove() {
+    public virtual void Remove() {
 
     }
 }
