@@ -57,8 +57,12 @@ public class Stage2Quest : MonoBehaviour {
         };
     }
 	
-	// Update is called once per frame
-	void Update () {
+    public void ResetTime() {
+        timeLeft = 60f;
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (!_orchestrator.GamePlay.activeSelf) return;
 
         timeLeft -= Time.deltaTime;

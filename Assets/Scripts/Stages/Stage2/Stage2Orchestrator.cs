@@ -14,6 +14,10 @@ public class Stage2Orchestrator : MonoBehaviour {
                 _pauseMenu = GameObject.Find("PauseMenu");
             }
 
+            if (_pauseMenu == null) {
+                _pauseMenu = PersistentUI.instance.PauseMenu;
+            }
+
             return _pauseMenu;
         }
     }
@@ -24,6 +28,10 @@ public class Stage2Orchestrator : MonoBehaviour {
         get {
             if (_settingsMenu == null) {
                 _settingsMenu = GameObject.Find("SettingsMenu");
+            }
+
+            if (_settingsMenu == null) {
+                _settingsMenu = PersistentUI.instance.SettingsMenu;
             }
 
             return _settingsMenu;
@@ -133,6 +141,11 @@ public class Stage2Orchestrator : MonoBehaviour {
             if (_deathScreen == null) {
                 _deathScreen = GameObject.Find("DeathScreen");
             }
+
+            if (_deathScreen == null) {
+                _deathScreen = PersistentUI.instance.DeathScreen;
+            }
+
             return _deathScreen;
         }
     }
@@ -237,7 +250,7 @@ public class Stage2Orchestrator : MonoBehaviour {
         PauseMenu.SetActive(false);
         SettingsMenu.SetActive(false);
         DeathScreen.SetActive(false);
-        Inventory.SetActive(false);
+        //Inventory.SetActive(false);
         TimerPopup.SetActive(false);
 
         GamePlay.SetActive(false);

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Stages;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ActionsPause : MonoBehaviour {
@@ -11,6 +12,7 @@ public class ActionsPause : MonoBehaviour {
     }
 
     public void Restart() {
+        //GameManager.instance.RestartScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
