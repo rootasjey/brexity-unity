@@ -31,7 +31,7 @@ namespace Assets.Scripts.Stages {
                 hud.name = "HUD";
 
                 var world = GameObject.Find("GamePlay");
-                if (world != null) hud.transform.parent = world.transform;
+                if (world != null) hud.transform.SetParent(world.transform);
             }
         }
     }

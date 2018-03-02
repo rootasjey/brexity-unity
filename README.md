@@ -6,7 +6,9 @@ This is a stealth/adventure game.
 
 ## Screenshots
 
-![brexity2031](brexity.png)
+![brexity2031](brexity1.png)
+
+![brexity2031](brexity2.png)
 
 ## Teaser
 
@@ -21,10 +23,18 @@ https://youtu.be/Lhit904ipqE
 
 ## TODO
 
-* Enemies player detection
-* Dialog system
+* Inventory
 * Quests system
 * Companion system
+
+### Quest
+
+* Get rid of the tracker
+* Find women’s sexy red lingerie
+* Find a drone and Dr tooth
+* Find batteries and people like yourself
+* Find the surgeon
+* Go watch the video tape at the depository
 
 ## Contribute
 

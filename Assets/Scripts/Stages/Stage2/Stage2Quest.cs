@@ -26,29 +26,31 @@ public class Stage2Quest : MonoBehaviour {
     private void InitQuest() {
         _quest = new Quest();
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Get rid of the tracker"
-        });
+        _quest.Objectives = new List<Objective> {
+            new Objective() {
+                Name = "Get rid of the tracker"
+            },
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Find women’s sexy red lingerie"
-        });
+            new Objective() {
+                Name = "Find women’s sexy red lingerie"
+            },
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Find a drone and Dr tooth"
-        });
+            new Objective() {
+                Name = "Find a drone and Dr tooth"
+            },
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Find batteries and people like yourself"
-        });
+            new Objective() {
+                Name = "Find batteries and people like yourself"
+            },
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Find the surgeon"
-        });
+            new Objective() {
+                Name = "Find the surgeon"
+            },
 
-        _quest.Objectives.Add(new Objective() {
-            Name = "Go watch the video tape at the depository"
-        });
+            new Objective() {
+                Name = "Go watch the video tape at the depository"
+            }
+        };
     }
 	
 	// Update is called once per frame

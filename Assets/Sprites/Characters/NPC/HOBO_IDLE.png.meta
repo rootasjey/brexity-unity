@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 0defe81f32285d64e9ee9242bc714ab8
+timeCreated: 1519991307
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HOBO_IDLE_0
+    21300002: HOBO_IDLE_1
+    21300004: HOBO_IDLE_2
+    21300006: HOBO_IDLE_3
+    21300008: HOBO_IDLE_4
+    21300010: HOBO_IDLE_5
+    21300012: HOBO_IDLE_6
+    21300014: HOBO_IDLE_7
+    21300016: HOBO_IDLE_8
+    21300018: HOBO_IDLE_9
+    21300020: HOBO_IDLE_10
+    21300022: HOBO_IDLE_11
+    21300024: HOBO_IDLE_12
+    21300026: HOBO_IDLE_13
+    21300028: HOBO_IDLE_14
+    21300030: HOBO_IDLE_15
+    21300032: HOBO_IDLE_16
+    21300034: HOBO_IDLE_17
+    21300036: HOBO_IDLE_18
+    21300038: HOBO_IDLE_19
+    21300040: HOBO_IDLE_20
+    21300042: HOBO_IDLE_21
+    21300044: HOBO_IDLE_22
+    21300046: HOBO_IDLE_23
+    21300048: HOBO_IDLE_24
+    21300050: HOBO_IDLE_25
+    21300052: HOBO_IDLE_26
+    21300054: HOBO_IDLE_27
+    21300056: HOBO_IDLE_28
+    21300058: HOBO_IDLE_29
+    21300060: HOBO_IDLE_30
+    21300062: HOBO_IDLE_31
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HOBO_IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 233
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 0
+        width: 231
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 0
+        width: 232
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 4046
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 4284
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 4522
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 4773
+        y: 0
+        width: 225
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 4998
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 5474
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 5712
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 6204
+        y: 0
+        width: 221
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_27
+      rect:
+        serializedVersion: 2
+        x: 6445
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_28
+      rect:
+        serializedVersion: 2
+        x: 6664
+        y: 0
+        width: 238.67741
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 21, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_29
+      rect:
+        serializedVersion: 2
+        x: 6902
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HOBO_IDLE_30
+      rect:
+        serializedVersion: 2
+        x: 7140
+        y: 0
+        width: 239
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

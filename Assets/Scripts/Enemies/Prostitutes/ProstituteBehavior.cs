@@ -16,14 +16,10 @@ public class ProstituteBehavior : MonoBehaviour {
     private GameObject _spriteGameObject;
     private SpriteRenderer _spriteRenderer;
 
-    private Stage2Orchestrator _orchestrator;
-
     private BoxCollider2D _colliderDetection;
 
     // Use this for initialization
     void Start () {
-        _orchestrator = GameObject.Find("Orchestrator").GetComponent<Stage2Orchestrator>();
-
         _initialTimeBeforeTurnOff = timeBeforeTurnOff;
         _initialOffDuration = offDuration;
 
