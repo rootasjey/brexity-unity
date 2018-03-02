@@ -17,7 +17,9 @@ public class Interactable : MonoBehaviour {
     private float _initialTime = 1f;
     private float _timeLeft;
     private float _deltaY = 0.01f;
-    
+
+    protected PlayerStats playerStats;
+
     public virtual void Update() {
         if (!_isPlayerInRange) return;
 
@@ -45,7 +47,7 @@ public class Interactable : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        var playerStats = collision.gameObject.GetComponent<PlayerStats>();
+        playerStats = collision.gameObject.GetComponent<PlayerStats>();
         if (!playerStats) return;
 
         ShowPopupHint();
@@ -54,7 +56,7 @@ public class Interactable : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        var playerStats = collision.gameObject.GetComponent<PlayerStats>();
+        playerStats = collision.gameObject.GetComponent<PlayerStats>();
         if (!playerStats) return;
 
         HidePopupHint();

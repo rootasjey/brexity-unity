@@ -5,7 +5,7 @@ using UnityEngine.Video;
 public class CutSceneStarter : Interactable {
     //Video To Play [Assign from the Editor]
     public VideoClip videoToPlay;
-
+    public VideoClip videoToPlay1;
     public int questStep;
     public bool incrementQuestStep;
 
@@ -19,7 +19,7 @@ public class CutSceneStarter : Interactable {
     private bool _isVideoPlaying { get; set; }
 
     private Stage2Orchestrator _orchestrator { get; set; }
-
+    public PlayerStats localPlayerStats;
 
     public override void Interact() {
         _orchestrator = GameObject.Find("Orchestrator")
@@ -33,6 +33,7 @@ public class CutSceneStarter : Interactable {
 
         if (incrementQuestStep) {
             _orchestrator.StageQuest.Quest.CompleteNext();
+            videoToPlay = videoToPlay1;
         }
 
         _isVideoPlaying = true;
@@ -49,7 +50,7 @@ public class CutSceneStarter : Interactable {
 
     public override void Update() {
         base.Update();
-
+        localPlayerStats = playerStats;
         if (_isVideoPlaying) {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) {
                 StopIntro();
