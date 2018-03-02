@@ -21,7 +21,10 @@ public class CompleteQuestScumAgent : MonoBehaviour {
             _playerStat = _cutSceneStarter.localPlayerStats;
             return;
         }
-
+        if (_playerStat.QuestIndexGameObject.Value == null || _playerStat.QuestIndexGameObject.Value.GetComponent<PickableQuestItem>() != null || _playerStat.QuestIndexGameObject.Value.GetComponent<PickableQuestItem>().itemId != null)
+        {
+            return;
+        }
         if (_playerStat.QuestIndexGameObject.Value.GetComponent<PickableQuestItem>().itemId == itemId)
         {
             _cutSceneStarter.incrementQuestStep = true;
