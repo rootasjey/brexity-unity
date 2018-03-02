@@ -1,11 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PersistentHUD : MonoBehaviour {
     public static PersistentHUD instance = null;
 
     public GameObject HUDPrefab;
+
+    private Text _textTimer;
+
+    public Text TextTimer {
+        get { return _textTimer; }
+    }
+
 
     // Use this for initialization
     private void Awake() {
@@ -18,12 +26,14 @@ public class PersistentHUD : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
 
-        //InitGame();
         instance.name = "HUD";
+        InitGame();
     }
 
     private void InitGame() {
-        var _hud = Instantiate(HUDPrefab);
-        _hud.name = "HUD";
+        _textTimer = transform
+            .Find("Timer")
+            .Find("TimerPopup")
+            .Find("TimerText").GetComponent<Text>();
     }
 }

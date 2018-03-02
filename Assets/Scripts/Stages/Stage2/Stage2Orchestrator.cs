@@ -188,8 +188,7 @@ public class Stage2Orchestrator : MonoBehaviour {
     public Text TimerText {
         get {
             if (_timerText == null) {
-                _timerText = TimerPopup.transform.Find("TimerText")
-                                .gameObject.GetComponent<Text>();
+                _timerText = PersistentHUD.instance.TextTimer;
             }
             return _timerText;
         }
@@ -251,7 +250,7 @@ public class Stage2Orchestrator : MonoBehaviour {
         SettingsMenu.SetActive(false);
         DeathScreen.SetActive(false);
         //Inventory.SetActive(false);
-        TimerPopup.SetActive(false);
+        //TimerPopup.SetActive(false);
 
         GamePlay.SetActive(false);
 

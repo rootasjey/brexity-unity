@@ -28,7 +28,7 @@ public class Inv : MonoBehaviour {
             var invSlot = slot.GetComponent<InvSlot>();
 
             var rect = slot.GetComponent<RectTransform>();
-            rect.position = new Vector3(-5, (i * rect.sizeDelta.y) - 1f);
+            rect.position = new Vector3(-5, (i * rect.sizeDelta.y) + 1f);
 
             listInvSlots.Add(slot);
         }

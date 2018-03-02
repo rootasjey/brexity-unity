@@ -63,6 +63,12 @@ public class Stage2Quest : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        if (_orchestrator == null) {
+            _orchestrator = GameObject.Find("Orchestrator")
+            .GetComponent<Stage2Orchestrator>();
+        }
+
+        if (_orchestrator == null || _orchestrator.GamePlay == null) return;
         if (!_orchestrator.GamePlay.activeSelf) return;
 
         timeLeft -= Time.deltaTime;

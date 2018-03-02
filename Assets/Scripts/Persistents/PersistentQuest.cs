@@ -1,12 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PersistentQuest : MonoBehaviour {
 
     public static PersistentQuest instance = null;
 
     public GameObject QuestPrefab;
+
+    private Text _timerText;
+
+    public Text TimerText {
+        get { return _timerText; }
+    }
 
     // Use this for initialization
     private void Awake() {
@@ -19,16 +24,16 @@ public class PersistentQuest : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
 
-        //InitGame();
+        InitGame();
         instance.name = "Quest";
+    }
+
+    private void InitGame() {
+        _timerText = transform.Find("QuestTimer")
+                      .gameObject.GetComponent<Text>();
     }
 
     public void ResetTimer() {
         instance.GetComponent<Stage2Quest>().ResetTime();
-    }
-
-    private void InitGame() {
-        var _ui = Instantiate(QuestPrefab);
-        _ui.name = "Quest";
     }
 }
