@@ -83,7 +83,7 @@ MonoBehaviour:
   hintBackground: {fileID: 21300000, guid: a9f2cc2f77f71a241a15c8eb81a8d07f, type: 3}
   videoToPlay: {fileID: 32900000, guid: 3392625e8af03b446ba3060f8a97f31e, type: 3}
   videoToPlay1: {fileID: 32900000, guid: 8cfb99c87ef3aa94cb7ad40556da8c81, type: 3}
-  questStep: 1
+  questStep: 0
   incrementQuestStep: 0
   localPlayerStats: {fileID: 0}
 --- !u!224 &224385195702836456

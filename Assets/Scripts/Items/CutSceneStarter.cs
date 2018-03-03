@@ -36,6 +36,13 @@ public class CutSceneStarter : Interactable {
             videoToPlay = videoToPlay1;
         }
 
+        if (_orchestrator.StageQuest.Quest.CurrentStep == 0)
+        {
+            questStep++;
+            _orchestrator.StageQuest.Quest.CompleteNext();
+            incrementQuestStep = false;
+        }
+
         _isVideoPlaying = true;
 
         InitializeFontStyle();

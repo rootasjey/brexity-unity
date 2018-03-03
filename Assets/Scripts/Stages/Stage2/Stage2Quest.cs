@@ -27,6 +27,12 @@ public class Stage2Quest : MonoBehaviour {
         InitQuest();
     }
 
+    public void ResetQuest()
+    {
+        _quest.CurrentStep = 0;
+        InitQuest();
+    }
+
     private void InitQuest() {
         _quest = new Quest {
             Objectives = new List<Objective> {

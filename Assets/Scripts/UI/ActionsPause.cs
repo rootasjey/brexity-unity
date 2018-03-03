@@ -14,6 +14,7 @@ public class ActionsPause : MonoBehaviour {
     public void Restart() {
         //GameManager.instance.RestartScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        PersistentQuest.instance.GetComponent<Stage2Quest>().ResetQuest();
     }
 
     public void Resume() {

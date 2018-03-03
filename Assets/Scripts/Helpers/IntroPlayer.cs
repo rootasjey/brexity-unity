@@ -24,7 +24,7 @@ public class IntroPlayer : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Debug.Log(SceneManager.GetActiveScene().name);
-        if (videoToPlay == null /*&& !SceneManager.GetActiveScene().name.Equals("Stage2_sewer")*/) {
+        if (videoToPlay == null) {
             StopIntro();
             return;
         }
