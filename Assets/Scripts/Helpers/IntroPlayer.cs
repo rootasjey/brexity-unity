@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class IntroPlayer : MonoBehaviour {
@@ -22,13 +23,13 @@ public class IntroPlayer : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if (videoToPlay == null) {
+        Debug.Log(SceneManager.GetActiveScene().name);
+        if (videoToPlay == null /*&& !SceneManager.GetActiveScene().name.Equals("Stage2_sewer")*/) {
             StopIntro();
             return;
         }
 
         PersistentHUD.instance.gameObject.SetActive(false);
-
         InitializeFontStyle();
 
         Application.runInBackground = true;
