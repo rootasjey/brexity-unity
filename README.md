@@ -21,11 +21,19 @@ https://youtu.be/Lhit904ipqE
 3. Build with Unity or Visual Studio
 4. Enjoy \o/
 
+## Known Bugs
+
+* Inventory case misplaced
+* Video player doesn't show the scene when playing ends
+* Going to sewer sometimes doesn't show the scene
+* Music doesn't play
+
 ## TODO
 
 * Inventory
 * Quests system
 * Companion system
+* Change trader
 
 ### Quest
 
