@@ -26,8 +26,8 @@ public class ActionsPause : MonoBehaviour {
     }
 
     public void GoToSettings() {
-        _orchestrator.SettingsMenu.SetActive(true);
-        _orchestrator.PauseMenu.SetActive(false);
+        PersistentUI.instance.SettingsMenu.SetActive(true);
+        PersistentUI.instance.PauseMenu.SetActive(true);
     }
 
     public void ExitGame() {

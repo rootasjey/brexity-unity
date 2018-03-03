@@ -29,9 +29,10 @@ public class CutSceneStarter : Interactable {
             return;
         }
 
-        // test 2nd quest
+        PersistentHUD.instance.gameObject.SetActive(false);
 
         if (incrementQuestStep) {
+            PersistentQuest.instance.ResetTimer();
             _orchestrator.StageQuest.Quest.CompleteNext();
             videoToPlay = videoToPlay1;
         }
@@ -135,6 +136,8 @@ public class CutSceneStarter : Interactable {
     private void StopIntro() {
         _isIntroSkipped = true;
         _isVideoPlaying = false;
+
+        PersistentHUD.instance.gameObject.SetActive(true);
 
         videoPlayer.Stop();
 

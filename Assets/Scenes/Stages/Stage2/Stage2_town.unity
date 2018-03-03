@@ -4367,7 +4367,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101986778}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48db0f8c19dd17440a5491bc7c55d81b, type: 3}
   m_Name: 
@@ -4490,7 +4490,7 @@ MonoBehaviour:
   facingRight: 1
   anim: {fileID: 2101986781}
   freezeMovement: 0
-  canRun: 1
+  canRun: 0
 --- !u!50 &2101986788
 Rigidbody2D:
   serializedVersion: 4

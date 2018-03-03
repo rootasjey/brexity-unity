@@ -25,8 +25,11 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
         _backgroundMusic = GameObject.Find("BackgroundMusic")
                             .GetComponent<AudioSource>();
 
-        _ambianceSound = GameObject.Find("AmbianceSound")
+        if (GameObject.Find("AmbianceSound")) {
+            _ambianceSound = GameObject.Find("AmbianceSound")
                             .GetComponent<AudioSource>();
+        }
+        
 
         _audioSlider.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
     }
@@ -60,8 +63,8 @@ public class ActionsScreenTitleSettings : MonoBehaviour {
     }
 
     public void ChangeMasterVolume() {
-        _backgroundMusic.volume = _audioSlider.value;
-        _ambianceSound.volume = _audioSlider.value;
+        if (_backgroundMusic) _backgroundMusic.volume = _audioSlider.value;
+        if (_ambianceSound) _ambianceSound.volume = _audioSlider.value;
     }
 
     private void SaveSettings() {

@@ -64,7 +64,7 @@ public class Stage2Quest : MonoBehaviour {
     }
 	
     public void ResetTime() {
-        timeLeft = 60f;
+        timeLeft = 99f;
     }
 
     // Update is called once per frame
