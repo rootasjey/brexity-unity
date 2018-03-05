@@ -30,7 +30,7 @@ namespace Assets.Scripts.Helpers {
                 return;
             }
 
-            PersistentHUD.instance.gameObject.SetActive(false);
+            HUD.Instance.gameObject.SetActive(false);
 
             Application.runInBackground = true;
 

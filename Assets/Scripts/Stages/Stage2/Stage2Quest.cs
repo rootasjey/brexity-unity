@@ -9,9 +9,9 @@ public class Stage2Quest : MonoBehaviour {
 
     private Stage2Orchestrator _orchestrator;
 
-    private float _animationDuration = 2f;
+    private float _animationDuration = 1f;
     private float _animationDurationLeft;
-    private float _angleStep = 0.1f;
+    private float _scaleStep = -0.0025f;
 
     private Quest _quest;
 
@@ -25,12 +25,21 @@ public class Stage2Quest : MonoBehaviour {
         _animationDurationLeft = _animationDuration;
 
         InitQuest();
+
+        if (_orchestrator.TimerSandGlass) {
+            _orchestrator.TimerSandGlass
+           .GetComponent<RectTransform>().localScale = Vector3.one;
+        }
     }
+       
 
     public void ResetQuest()
     {
         _quest.CurrentStep = 0;
         InitQuest();
+
+        _orchestrator.TimerSandGlass
+           .GetComponent<RectTransform>().localScale = Vector3.one;
     }
 
     private void InitQuest() {
@@ -86,17 +95,22 @@ public class Stage2Quest : MonoBehaviour {
         _animationDurationLeft -= Time.deltaTime;
 
         if (_animationDurationLeft <= 0) {
-            _animationDurationLeft = _animationDuration * 2;
-            _angleStep = -_angleStep;
+            _animationDurationLeft = _animationDuration;
+            _scaleStep = -_scaleStep;
         }
 
-        var timerRect = _orchestrator.Timer.GetComponent<RectTransform>();
+        var timerRect = _orchestrator.TimerSandGlass.GetComponent<RectTransform>();
 
-        timerRect
-            .eulerAngles = new Vector3(
-                timerRect.eulerAngles.x,
-                timerRect.eulerAngles.y,
-                timerRect.eulerAngles.z + _angleStep);
+        timerRect.localScale = new Vector3(
+            timerRect.localScale.x + _scaleStep,
+            timerRect.localScale.y + _scaleStep,
+            timerRect.localScale.z + _scaleStep);
+
+        //timerRect
+        //    .eulerAngles = new Vector3(
+        //        timerRect.eulerAngles.x,
+        //        timerRect.eulerAngles.y,
+        //        timerRect.eulerAngles.z + _angleStep);
 
         _orchestrator.TimerText.text = ((int)timeLeft).ToString();
     }

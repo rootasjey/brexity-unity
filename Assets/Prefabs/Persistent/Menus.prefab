@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 222033674060947384}
   - component: {fileID: 114944577040148822}
   m_Layer: 5
-  m_Name: SettingsMenu
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 4852968929111380}
   - component: {fileID: 114822612291338308}
   m_Layer: 0
-  m_Name: UI
+  m_Name: Menus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 114711916700508848}
   - component: {fileID: 114385892099616236}
   m_Layer: 5
-  m_Name: DeathScreen
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 222002950869540646}
   - component: {fileID: 114555459171952518}
   m_Layer: 5
-  m_Name: PauseMenu
+  m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2130,7 +2130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b3bb88c429e104d8f0901ddfaadb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUDPrefab: {fileID: 1390227430210766}
 --- !u!114 &114823670017194724
 MonoBehaviour:
   m_ObjectHideFlags: 1

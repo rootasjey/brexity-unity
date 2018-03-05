@@ -19,10 +19,10 @@ public class ScreenTitleOrchestrator : MonoBehaviour {
         _settingsMenu = GameObject.Find("SettingsMenu");
         if (_settingsMenu) _settingsMenu.SetActive(false);
 
-        PersistentUI.instance.DeathScreen.SetActive(false);
-        PersistentUI.instance.SettingsMenu.SetActive(false);
-        PersistentUI.instance.PauseMenu.SetActive(false);
-        PersistentHUD.instance.gameObject.SetActive(false);
+        Menus.Instance.GameOver.SetActive(false);
+        Menus.Instance.Settings.SetActive(false);
+        Menus.Instance.Pause.SetActive(false);
+        HUD.Instance.gameObject.SetActive(false);
     }
     
     private void InitializePreferences() {

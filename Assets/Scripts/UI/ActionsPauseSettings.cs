@@ -55,8 +55,8 @@ public class ActionsPauseSettings : MonoBehaviour {
     }
 
     public void BackToMainMenu() {
-        PersistentUI.instance.SettingsMenu.SetActive(false);
-        PersistentUI.instance.PauseMenu.SetActive(false);
+        Menus.Instance.Settings.SetActive(false);
+        Menus.Instance.Pause.SetActive(false);
 
         SaveSettings();
     }

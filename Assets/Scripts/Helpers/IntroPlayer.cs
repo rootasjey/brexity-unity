@@ -29,7 +29,7 @@ public class IntroPlayer : MonoBehaviour {
             return;
         }
 
-        PersistentHUD.instance.gameObject.SetActive(false);
+        HUD.Instance.gameObject.SetActive(false);
         InitializeFontStyle();
 
         Application.runInBackground = true;
@@ -119,7 +119,7 @@ public class IntroPlayer : MonoBehaviour {
 
         if (videoPlayer) videoPlayer.Stop();
 
-        PersistentHUD.instance.gameObject.SetActive(true);
+        HUD.Instance.gameObject.SetActive(true);
 
         if (ScreenAfterIntro != null) {
             ScreenAfterIntro.SetActive(true);

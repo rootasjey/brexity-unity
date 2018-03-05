@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Stage2Orchestrator : MonoBehaviour {
 
+    public bool worldStateOnLoad;
+
     #region properties
 
     private GameObject _pauseMenu;
@@ -15,7 +17,7 @@ public class Stage2Orchestrator : MonoBehaviour {
             }
 
             if (_pauseMenu == null) {
-                _pauseMenu = PersistentUI.instance.PauseMenu;
+                _pauseMenu = Menus.Instance.Pause;
             }
 
             return _pauseMenu;
@@ -31,7 +33,7 @@ public class Stage2Orchestrator : MonoBehaviour {
             }
 
             if (_settingsMenu == null) {
-                _settingsMenu = PersistentUI.instance.SettingsMenu;
+                _settingsMenu = Menus.Instance.Settings;
             }
 
             return _settingsMenu;
@@ -143,7 +145,7 @@ public class Stage2Orchestrator : MonoBehaviour {
             }
 
             if (_deathScreen == null) {
-                _deathScreen = PersistentUI.instance.DeathScreen;
+                _deathScreen = Menus.Instance.GameOver;
             }
 
             return _deathScreen;
@@ -155,7 +157,7 @@ public class Stage2Orchestrator : MonoBehaviour {
     public GameObject GamePlay {
         get {
             if (_gamePlay == null) {
-                _gamePlay = GameObject.Find("GamePlay");
+                _gamePlay = GameObject.Find("World");
             }
             return _gamePlay;
         }
@@ -169,6 +171,18 @@ public class Stage2Orchestrator : MonoBehaviour {
                 _timer = GameObject.Find("Timer");
             }
             return _timer;
+        }
+    }
+
+    private GameObject _timerSandGlass;
+
+    public GameObject TimerSandGlass {
+        get {
+            if (_timerSandGlass == null) {
+                _timerSandGlass = Timer ? 
+                    Timer.transform.Find("SandGlass").gameObject : null;
+            }
+            return _timerSandGlass;
         }
     }
 
@@ -188,7 +202,7 @@ public class Stage2Orchestrator : MonoBehaviour {
     public Text TimerText {
         get {
             if (_timerText == null) {
-                _timerText = PersistentHUD.instance.TextTimer;
+                _timerText = HUD.Instance.TextTimer;
             }
             return _timerText;
         }
@@ -235,8 +249,16 @@ public class Stage2Orchestrator : MonoBehaviour {
                 Time.timeScale = 0;
 
                 _lastVolumeValue = _backgroundMusic.volume;
-                BackgroundMusic.volume = 0;
-                Audio.SetActive(false);
+                //BackgroundMusic.volume = 0;
+
+                //Audio.SetActive(false);
+
+                var music = GameObject.Find("BackgroundMusic").GetComponent<AudioSource>();
+                music.Pause();
+
+                var sound = GameObject.Find("AmbianceSound").GetComponent<AudioSource>();
+                sound.Pause();
+
             }
         }
 
@@ -252,9 +274,7 @@ public class Stage2Orchestrator : MonoBehaviour {
         //Inventory.SetActive(false);
         //TimerPopup.SetActive(false);
 
-        GamePlay.SetActive(false);
-
-        Audio.SetActive(false);
+        GamePlay.SetActive(worldStateOnLoad);
     }
 
     private void InitializePreferences() {
@@ -267,7 +287,12 @@ public class Stage2Orchestrator : MonoBehaviour {
         Time.timeScale = 1;
 
         BackgroundMusic.volume = _lastVolumeValue;
-        Audio.SetActive(true);
+        //Audio.SetActive(true);
+        var music = GameObject.Find("BackgroundMusic").GetComponent<AudioSource>();
+        music.UnPause();
+
+        var sound = GameObject.Find("AmbianceSound").GetComponent<AudioSource>();
+        sound.UnPause();
     }
 
     public void SetLastSavedVolume(float value) {

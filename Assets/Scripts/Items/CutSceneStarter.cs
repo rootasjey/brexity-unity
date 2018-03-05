@@ -29,10 +29,10 @@ public class CutSceneStarter : Interactable {
             return;
         }
 
-        PersistentHUD.instance.gameObject.SetActive(false);
+        HUD.Instance.gameObject.SetActive(false);
 
         if (incrementQuestStep) {
-            PersistentQuest.instance.ResetTimer();
+            Story.Instance.ResetTimer();
             _orchestrator.StageQuest.Quest.CompleteNext();
             videoToPlay = videoToPlay1;
         }
@@ -137,7 +137,7 @@ public class CutSceneStarter : Interactable {
         _isIntroSkipped = true;
         _isVideoPlaying = false;
 
-        PersistentHUD.instance.gameObject.SetActive(true);
+        HUD.Instance.gameObject.SetActive(true);
 
         videoPlayer.Stop();
 

@@ -14,7 +14,7 @@ public class ActionsPause : MonoBehaviour {
     public void Restart() {
         //GameManager.instance.RestartScene();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        PersistentQuest.instance.GetComponent<Stage2Quest>().ResetQuest();
+        Story.Instance.GetComponent<Stage2Quest>().ResetQuest();
     }
 
     public void Resume() {
@@ -26,8 +26,8 @@ public class ActionsPause : MonoBehaviour {
     }
 
     public void GoToSettings() {
-        PersistentUI.instance.SettingsMenu.SetActive(true);
-        PersistentUI.instance.PauseMenu.SetActive(true);
+        Menus.Instance.Settings.SetActive(true);
+        Menus.Instance.Pause.SetActive(true);
     }
 
     public void ExitGame() {
