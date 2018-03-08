@@ -53,4 +53,4 @@ Unfortunately, you're not allowed to sell this game or include it
 in another paid software.
 
 Please refer to the LICENSE file or contact me for more information.
-(You can open a pull request with your question or mention me on twitter [@jeremiecorpinot](https://www.twitter.com/jeremiecorpinot) or the official account [@Brexity2031](https://twitter.com/brexity2031))
+(You can open a pull request with your question or mentio the official account [@Brexity2031](https://twitter.com/brexity2031))
